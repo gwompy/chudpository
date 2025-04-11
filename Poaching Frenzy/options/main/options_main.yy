@@ -2,6 +2,10 @@
   "$GMMainOptions":"",
   "%Name":"Main",
   "name":"Main",
+<<<<<<< Updated upstream
+=======
+  "option_audio_error_behaviour":true,
+>>>>>>> Stashed changes
   "option_author":"",
   "option_collision_compatibility":false,
   "option_copy_on_write_enabled":false,
@@ -9,7 +13,15 @@
   "option_gameguid":"40ccef29-0fdc-4737-80af-747a33932cd6",
   "option_gameid":"0",
   "option_game_speed":60,
+<<<<<<< Updated upstream
   "option_mips_for_3d_textures":false,
+=======
+  "option_legacy_json_parsing":true,
+  "option_legacy_number_conversion":true,
+  "option_legacy_other_behaviour":true,
+  "option_mips_for_3d_textures":false,
+  "option_remove_unused_assets":false,
+>>>>>>> Stashed changes
   "option_sci_usesci":false,
   "option_spine_licence":false,
   "option_steam_app_id":"0",

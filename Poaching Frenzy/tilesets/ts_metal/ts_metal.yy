@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "$GMTileSet":"",
+=======
+  "$GMTileSet":"v1",
+>>>>>>> Stashed changes
   "%Name":"ts_metal",
   "autoTileSets":[],
   "macroPageTiles":{
@@ -12,8 +16,13 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
+<<<<<<< Updated upstream
     "name":"Sprites",
     "path":"folders/Sprites.yy",
+=======
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+>>>>>>> Stashed changes
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
@@ -26,10 +35,13 @@
     "name":"Default",
     "path":"texturegroups/Default",
   },
+<<<<<<< Updated upstream
   "tileAnimation":{
     "FrameData":[0,1,2,3,4,5,6,7,8,9,10,11,],
     "SerialiseFrameCount":1,
   },
+=======
+>>>>>>> Stashed changes
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
   "tileHeight":256,
