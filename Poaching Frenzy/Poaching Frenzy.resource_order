@@ -17,23 +17,6 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
-<<<<<<< Updated upstream
-    {"name":"Room10","order":2,"path":"rooms/Room10/Room10.yy",},
-    {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
-    {"name":"Room3","order":3,"path":"rooms/Room3/Room3.yy",},
-    {"name":"Room4","order":4,"path":"rooms/Room4/Room4.yy",},
-    {"name":"Room5","order":5,"path":"rooms/Room5/Room5.yy",},
-    {"name":"Room6","order":6,"path":"rooms/Room6/Room6.yy",},
-    {"name":"Room7","order":7,"path":"rooms/Room7/Room7.yy",},
-    {"name":"Room8","order":8,"path":"rooms/Room8/Room8.yy",},
-    {"name":"Room9","order":9,"path":"rooms/Room9/Room9.yy",},
-    {"name":"spr_card","order":21,"path":"sprites/spr_card/spr_card.yy",},
-    {"name":"spr_clay","order":9,"path":"sprites/spr_clay/spr_clay.yy",},
-    {"name":"spr_hut","order":22,"path":"sprites/spr_hut/spr_hut.yy",},
-    {"name":"spr_cloth","order":1,"path":"sprites/spr_cloth/spr_cloth.yy",},
-    {"name":"spr_concrete","order":2,"path":"sprites/spr_concrete/spr_concrete.yy",},
-    {"name":"spr_grass","order":3,"path":"sprites/spr_grass/spr_grass.yy",},
-=======
     {"name":"r_chudhouse2","order":1,"path":"rooms/r_chudhouse2/r_chudhouse2.yy",},
     {"name":"spr_card","order":21,"path":"sprites/spr_card/spr_card.yy",},
     {"name":"spr_clay","order":9,"path":"sprites/spr_clay/spr_clay.yy",},
@@ -41,25 +24,11 @@
     {"name":"spr_concrete","order":2,"path":"sprites/spr_concrete/spr_concrete.yy",},
     {"name":"spr_grass","order":3,"path":"sprites/spr_grass/spr_grass.yy",},
     {"name":"spr_hut","order":22,"path":"sprites/spr_hut/spr_hut.yy",},
->>>>>>> Stashed changes
     {"name":"spr_marble","order":4,"path":"sprites/spr_marble/spr_marble.yy",},
     {"name":"spr_metal","order":5,"path":"sprites/spr_metal/spr_metal.yy",},
     {"name":"spr_plaster","order":6,"path":"sprites/spr_plaster/spr_plaster.yy",},
     {"name":"spr_stone","order":7,"path":"sprites/spr_stone/spr_stone.yy",},
     {"name":"spr_wood","order":8,"path":"sprites/spr_wood/spr_wood.yy",},
-<<<<<<< Updated upstream
-    {"name":"ts_clay","order":20,"path":"tilesets/ts_clay/ts_clay.yy",},
-    {"name":"ts_concrete","order":11,"path":"tilesets/ts_concrete/ts_concrete.yy",},
-    {"name":"ts_marble","order":12,"path":"tilesets/ts_marble/ts_marble.yy",},
-    {"name":"ts_stone","order":13,"path":"tilesets/ts_stone/ts_stone.yy",},
-    {"name":"ts_plaster","order":14,"path":"tilesets/ts_plaster/ts_plaster.yy",},
-    {"name":"ts_wood","order":15,"path":"tilesets/ts_wood/ts_wood.yy",},
-    {"name":"ts_metal","order":16,"path":"tilesets/ts_metal/ts_metal.yy",},
-    {"name":"ts_grass","order":17,"path":"tilesets/ts_grass/ts_grass.yy",},
-    {"name":"ts_cloth","order":18,"path":"tilesets/ts_cloth/ts_cloth.yy",},
-    {"name":"ts_arid_grass","order":10,"path":"tilesets/ts_arid_grass/ts_arid_grass.yy",},
-    {"name":"ts_cardboard","order":19,"path":"tilesets/ts_cardboard/ts_cardboard.yy",},
-=======
     {"name":"ts_cardboard","order":1,"path":"tilesets/ts_cardboard/ts_cardboard.yy",},
     {"name":"ts_clay","order":2,"path":"tilesets/ts_clay/ts_clay.yy",},
     {"name":"ts_cloth","order":3,"path":"tilesets/ts_cloth/ts_cloth.yy",},
@@ -70,6 +39,5 @@
     {"name":"ts_plaster","order":8,"path":"tilesets/ts_plaster/ts_plaster.yy",},
     {"name":"ts_stone","order":9,"path":"tilesets/ts_stone/ts_stone.yy",},
     {"name":"ts_wood","order":10,"path":"tilesets/ts_wood/ts_wood.yy",},
->>>>>>> Stashed changes
   ],
 }

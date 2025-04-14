@@ -12,22 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-<<<<<<< Updated upstream
-    {"$GMSpriteFrame":"","%Name":"8173bfc7-46a8-43d4-8c2f-c323f8424910","name":"8173bfc7-46a8-43d4-8c2f-c323f8424910","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-=======
     {"$GMSpriteFrame":"","%Name":"fa547d42-aa23-4fb8-8f7e-5e036584d353","name":"fa547d42-aa23-4fb8-8f7e-5e036584d353","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
->>>>>>> Stashed changes
   ],
   "gridX":0,
   "gridY":0,
   "height":256,
   "HTile":false,
   "layers":[
-<<<<<<< Updated upstream
-    {"$GMImageLayer":"","%Name":"03564c06-d71f-45a7-a503-6780ad494828","blendMode":0,"displayName":"default","isLocked":false,"name":"03564c06-d71f-45a7-a503-6780ad494828","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-=======
     {"$GMImageLayer":"","%Name":"3e50c188-7ffa-4349-8d84-3053452853c4","blendMode":0,"displayName":"default","isLocked":false,"name":"3e50c188-7ffa-4349-8d84-3053452853c4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
->>>>>>> Stashed changes
   ],
   "name":"spr_hut",
   "nineSlice":null,
@@ -79,13 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-<<<<<<< Updated upstream
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8173bfc7-46a8-43d4-8c2f-c323f8424910","path":"sprites/spr_hut/spr_hut.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"62718ee3-540a-4e5d-9281-3288e14dce68","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-=======
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fa547d42-aa23-4fb8-8f7e-5e036584d353","path":"sprites/spr_hut/spr_hut.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"9291ec3b-cfcb-4898-8463-71d3bd9dab84","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
->>>>>>> Stashed changes
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
