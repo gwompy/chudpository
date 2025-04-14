@@ -17,8 +17,11 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_chud","order":1,"path":"objects/obj_chud/obj_chud.yy",},
     {"name":"r_chudhouse2","order":1,"path":"rooms/r_chudhouse2/r_chudhouse2.yy",},
     {"name":"spr_card","order":21,"path":"sprites/spr_card/spr_card.yy",},
+    {"name":"spr_chud_walkback","order":25,"path":"sprites/spr_chud_walkback/spr_chud_walkback.yy",},
+    {"name":"spr_chud_walkfront","order":23,"path":"sprites/spr_chud_walkfront/spr_chud_walkfront.yy",},
     {"name":"spr_clay","order":9,"path":"sprites/spr_clay/spr_clay.yy",},
     {"name":"spr_cloth","order":1,"path":"sprites/spr_cloth/spr_cloth.yy",},
     {"name":"spr_concrete","order":2,"path":"sprites/spr_concrete/spr_concrete.yy",},

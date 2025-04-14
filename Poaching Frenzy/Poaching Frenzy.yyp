@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":2,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -35,11 +35,14 @@
   },
   "name":"Poaching Frenzy",
   "resources":[
+    {"id":{"name":"obj_chud","path":"objects/obj_chud/obj_chud.yy",},},
     {"id":{"name":"obj_chudhut","path":"objects/obj_chudhut/obj_chudhut.yy",},},
     {"id":{"name":"r_chudhouse1","path":"rooms/r_chudhouse1/r_chudhouse1.yy",},},
     {"id":{"name":"r_chudhouse2","path":"rooms/r_chudhouse2/r_chudhouse2.yy",},},
     {"id":{"name":"spr_arid","path":"sprites/spr_arid/spr_arid.yy",},},
     {"id":{"name":"spr_card","path":"sprites/spr_card/spr_card.yy",},},
+    {"id":{"name":"spr_chud_walkback","path":"sprites/spr_chud_walkback/spr_chud_walkback.yy",},},
+    {"id":{"name":"spr_chud_walkfront","path":"sprites/spr_chud_walkfront/spr_chud_walkfront.yy",},},
     {"id":{"name":"spr_clay","path":"sprites/spr_clay/spr_clay.yy",},},
     {"id":{"name":"spr_cloth","path":"sprites/spr_cloth/spr_cloth.yy",},},
     {"id":{"name":"spr_concrete","path":"sprites/spr_concrete/spr_concrete.yy",},},
