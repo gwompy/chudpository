@@ -1,18 +1,32 @@
-/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
-/// @DnDHash : 26315807
-/// @DnDArgument : "code" "// Idea by AI$(13_10)$(13_10)// Draw Event$(13_10)var _y = 0; // Starting Y position$(13_10)var _x = 0; // X position$(13_10)$(13_10)draw_set_color(c_white);$(13_10)draw_set_halign(fa_left);$(13_10)$(13_10)for(var i = 0; i < ds_list_size(inventory); i++) {$(13_10)    var _item = inventory[| i];$(13_10)    draw_text(_x, _y, _item.name + " x" + string(_item.quantity));$(13_10)    _y += 24; // Spacing between items$(13_10)}"
-// Idea by AI
-
-// Draw Event
-var _y = 0; // Starting Y position
-var _x = 0; // X position
-
-draw_set_color(c_white);
-draw_set_halign(fa_left);
-
-for(var i = 0; i < ds_list_size(inventory); i++) {
-    var _item = inventory[| i];
-    draw_text(_x, _y, _item.name + " x" + string(_item.quantity));
-    _y += 24; // Spacing between items
-}
+/// @DnDHash : 20294316
+/// @DnDArgument : "var" "room"
+/// @DnDArgument : "value" "r_inv"
+if(room == r_inv){	/// @DnDAction : YoYo Games.Common.Execute_Code
+	/// @DnDVersion : 1
+	/// @DnDHash : 26315807
+	/// @DnDParent : 20294316
+	/// @DnDArgument : "code" "// Idea by AI$(13_10)$(13_10)// Draw Event$(13_10)var _y = 0; // Starting Y position$(13_10)var _x = 1500; // X position$(13_10)$(13_10)draw_set_color(c_white);$(13_10)draw_set_font(fnt_inv);$(13_10)draw_set_halign(fa_left);$(13_10)$(13_10)draw_text(_x, _y, "My Pockets Are Holding:");$(13_10)_y+= 200; // Spacing$(13_10)$(13_10)for(var i = 0; i < ds_list_size(inventory); i++) {$(13_10)    var _item = inventory[| i];$(13_10)    draw_text(_x, _y, _item.name + " x" + string(_item.quantity));$(13_10)    _y += 200; // Spacing between items$(13_10)}$(13_10)$(13_10)if ds_list_size(inventory) < 1 {$(13_10)	draw_text(_x, _y, "Nothing!");$(13_10)}"
+	// Idea by AI
+	
+	// Draw Event
+	var _y = 0; // Starting Y position
+	var _x = 1500; // X position
+	
+	draw_set_color(c_white);
+	draw_set_font(fnt_inv);
+	draw_set_halign(fa_left);
+	
+	draw_text(_x, _y, "My Pockets Are Holding:");
+	_y+= 200; // Spacing
+	
+	for(var i = 0; i < ds_list_size(inventory); i++) {
+	    var _item = inventory[| i];
+	    draw_text(_x, _y, _item.name + " x" + string(_item.quantity));
+	    _y += 200; // Spacing between items
+	}
+	
+	if ds_list_size(inventory) < 1 {
+		draw_text(_x, _y, "Nothing!");
+	}}

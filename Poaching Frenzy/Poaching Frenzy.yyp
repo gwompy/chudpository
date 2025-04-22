@@ -36,14 +36,17 @@
   },
   "name":"Poaching Frenzy",
   "resources":[
+    {"id":{"name":"fnt_inv","path":"fonts/fnt_inv/fnt_inv.yy",},},
     {"id":{"name":"obj_chud","path":"objects/obj_chud/obj_chud.yy",},},
     {"id":{"name":"obj_chudhut","path":"objects/obj_chudhut/obj_chudhut.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
     {"id":{"name":"obj_nohandle","path":"objects/obj_nohandle/obj_nohandle.yy",},},
     {"id":{"name":"obj_solid_tile","path":"objects/obj_solid_tile/obj_solid_tile.yy",},},
+    {"id":{"name":"obj_transferHandler","path":"objects/obj_transferHandler/obj_transferHandler.yy",},},
     {"id":{"name":"r_chudhouse1","path":"rooms/r_chudhouse1/r_chudhouse1.yy",},},
     {"id":{"name":"r_chudhouse2","path":"rooms/r_chudhouse2/r_chudhouse2.yy",},},
+    {"id":{"name":"r_inv","path":"rooms/r_inv/r_inv.yy",},},
     {"id":{"name":"additem","path":"scripts/additem/additem.yy",},},
     {"id":{"name":"removeitem","path":"scripts/removeitem/removeitem.yy",},},
     {"id":{"name":"spr_arid","path":"sprites/spr_arid/spr_arid.yy",},},
@@ -81,6 +84,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"r_chudhouse1","path":"rooms/r_chudhouse1/r_chudhouse1.yy",},},
     {"roomId":{"name":"r_chudhouse2","path":"rooms/r_chudhouse2/r_chudhouse2.yy",},},
+    {"roomId":{"name":"r_inv","path":"rooms/r_inv/r_inv.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
