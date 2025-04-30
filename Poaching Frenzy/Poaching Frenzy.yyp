@@ -55,6 +55,7 @@
     {"id":{"name":"obj_DarkWeb","path":"objects/obj_DarkWeb/obj_DarkWeb.yy",},},
     {"id":{"name":"obj_dialogue_box","path":"objects/obj_dialogue_box/obj_dialogue_box.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
+    {"id":{"name":"obj_gamerun","path":"objects/obj_gamerun/obj_gamerun.yy",},},
     {"id":{"name":"obj_Health","path":"objects/obj_Health/obj_Health.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
     {"id":{"name":"obj_Money","path":"objects/obj_Money/obj_Money.yy",},},
