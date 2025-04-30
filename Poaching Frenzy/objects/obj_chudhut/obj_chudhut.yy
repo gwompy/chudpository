@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_chudhut",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_chud","path":"objects/obj_chud/obj_chud.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_chudhut",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Zone1",
+    "path":"folders/Objects/Zone1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

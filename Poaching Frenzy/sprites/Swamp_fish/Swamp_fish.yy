@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Animals",
-    "path":"folders/Sprites/Animals.yy",
+    "name":"raw animals",
+    "path":"folders/Sprites/raw animals.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
