@@ -1,0 +1,34 @@
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 3E1F2220
+/// @DnDArgument : "var" "global.tutorial"
+if(global.tutorial == 0){	/// @DnDAction : YoYo Games.Common.Execute_Code
+	/// @DnDVersion : 1
+	/// @DnDHash : 451450E7
+	/// @DnDParent : 3E1F2220
+	/// @DnDArgument : "code" "// idea provided by AI$(13_10)$(13_10)$(13_10)if keyboard_check_pressed(vk_space) {$(13_10)    current_line++;$(13_10)	sprite_index = spr_chud_dialogue;$(13_10)	image_index = 0;$(13_10)    $(13_10)    // hides box when last line is reached$(13_10)    if (current_line >= array_length(tutorial_d)) {$(13_10)        current_line = 0;$(13_10)        global.tutorial = 1;$(13_10)        with (obj_dialogue_box) visible = false;$(13_10)    }$(13_10)}$(13_10)"
+	// idea provided by AI
+	
+	
+	if keyboard_check_pressed(vk_space) {
+	    current_line++;
+		sprite_index = spr_chud_dialogue;
+		image_index = 0;
+	    
+	    // hides box when last line is reached
+	    if (current_line >= array_length(tutorial_d)) {
+	        current_line = 0;
+	        global.tutorial = 1;
+	        with (obj_dialogue_box) visible = false;
+	    }
+	}}
+
+/// @DnDAction : YoYo Games.Common.Else
+/// @DnDVersion : 1
+/// @DnDHash : 2DBAC5F3
+else{	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+	/// @DnDVersion : 1
+	/// @DnDHash : 54522CB4
+	/// @DnDParent : 2DBAC5F3
+	/// @DnDArgument : "msg" ""not implemented yet""
+	show_debug_message(string("not implemented yet"));}
