@@ -15,7 +15,7 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
-    {"name":"Animals","order":15,"path":"folders/Sprites/Animals.yy",},
+    {"name":"Cooked Animals","order":15,"path":"folders/Sprites/Cooked Animals.yy",},
     {"name":"Battle_BG","order":16,"path":"folders/Sprites/Battle_BG.yy",},
     {"name":"Battle_Interface","order":18,"path":"folders/Sprites/Battle_Interface.yy",},
     {"name":"Dialogue","order":19,"path":"folders/Sprites/Dialogue.yy",},

@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_boar",
-    "path":"sprites/spr_boar/spr_boar.yy",
+    "name":"spr_boar_walk",
+    "path":"sprites/spr_boar_walk/spr_boar_walk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

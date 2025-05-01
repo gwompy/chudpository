@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_picnic",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_chud","path":"objects/obj_chud/obj_chud.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_picnic",
   "overriddenProperties":[],
