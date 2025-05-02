@@ -34,7 +34,7 @@ if(global.meetChudette == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
 	/// @DnDHash : 5ACAC470
 	/// @DnDParent : 7F38B8A4
-	/// @DnDArgument : "code" "// idea provided by AI$(13_10)$(13_10)$(13_10)if keyboard_check_pressed(vk_space) {$(13_10)    current_line++;$(13_10)    $(13_10)    // hides box when last line is reached$(13_10)    if (current_line >= array_length(chudette_d)) {$(13_10)        current_line = 0;$(13_10)        global.meetChudette = 0;$(13_10)    }$(13_10)}$(13_10)"
+	/// @DnDArgument : "code" "// idea provided by AI$(13_10)$(13_10)$(13_10)if keyboard_check_pressed(vk_space) {$(13_10)    current_line++;$(13_10)    $(13_10)    // hides box when last line is reached$(13_10)    if (current_line >= array_length(chudette_d)) {$(13_10)        current_line = 0;$(13_10)        global.meetChudette = 0;$(13_10)		room_goto(r_boar);$(13_10)    }$(13_10)}$(13_10)"
 	// idea provided by AI
 	
 	
@@ -45,15 +45,6 @@ if(global.meetChudette == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	    if (current_line >= array_length(chudette_d)) {
 	        current_line = 0;
 	        global.meetChudette = 0;
+			room_goto(r_boar);
 	    }
 	}}
-
-/// @DnDAction : YoYo Games.Common.Else
-/// @DnDVersion : 1
-/// @DnDHash : 2DBAC5F3
-else{	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
-	/// @DnDVersion : 1
-	/// @DnDHash : 54522CB4
-	/// @DnDParent : 2DBAC5F3
-	/// @DnDArgument : "msg" ""not implemented yet""
-	show_debug_message(string("not implemented yet"));}

@@ -9,8 +9,8 @@
   "name":"obj_DarkWeb",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Chudhouse",
+    "path":"folders/Objects/Chudhouse.yy",
   },
   "parentObjectId":null,
   "persistent":true,

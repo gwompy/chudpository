@@ -43,11 +43,23 @@ if(global.meetChudette == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
 	/// @DnDHash : 488EC7B7
 	/// @DnDParent : 5836C7B6
-	/// @DnDArgument : "code" "// checks which sprite should be drawn next$(13_10)$(13_10)if current_line == 0 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 1 sprite_index = spr_chud_dialogue;$(13_10)if current_line == 2 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 3 sprite_index = spr_chud_dialogue;$(13_10)if current_line == 5 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 6 sprite_index = spr_chud_dialogue;"
+	/// @DnDArgument : "code" "// checks which sprite should be drawn next$(13_10)$(13_10)if current_line == 0 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 1 sprite_index = spr_chud_dialogue;$(13_10)$(13_10)$(13_10)//boar arrives$(13_10)if current_line == 2 {$(13_10)    // only create the boar once$(13_10)	if !global.boarCreated {$(13_10)		instance_create_layer(2900, 1950, "fore", obj_boar);$(13_10)		global.boarCreated = true;$(13_10)	}$(13_10)}$(13_10)$(13_10)$(13_10)if current_line == 2 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 3 sprite_index = spr_chud_dialogue;$(13_10)if current_line == 5 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 6 sprite_index = spr_chud_dialogue;"
 	// checks which sprite should be drawn next
 	
 	if current_line == 0 sprite_index = spr_chudette_dialogue;
 	if current_line == 1 sprite_index = spr_chud_dialogue;
+	
+	
+	//boar arrives
+	if current_line == 2 {
+	    // only create the boar once
+		if !global.boarCreated {
+			instance_create_layer(2900, 1950, "fore", obj_boar);
+			global.boarCreated = true;
+		}
+	}
+	
+	
 	if current_line == 2 sprite_index = spr_chudette_dialogue;
 	if current_line == 3 sprite_index = spr_chud_dialogue;
 	if current_line == 5 sprite_index = spr_chudette_dialogue;

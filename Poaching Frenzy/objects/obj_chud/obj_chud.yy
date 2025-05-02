@@ -33,7 +33,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"spr_chud_walkfront",
     "path":"sprites/spr_chud_walkfront/spr_chud_walkfront.yy",
