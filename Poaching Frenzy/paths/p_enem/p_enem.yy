@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"p_enem",
+  "closed":false,
+  "kind":1,
+  "name":"p_enem",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":220.0,"y":500.0,},
+    {"speed":100.0,"x":400.0,"y":200.0,},
+    {"speed":100.0,"x":550.0,"y":500.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

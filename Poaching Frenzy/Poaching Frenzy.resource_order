@@ -47,6 +47,7 @@
     {"name":"obj_picnic","order":1,"path":"objects/obj_picnic/obj_picnic.yy",},
     {"name":"obj_solid_tile","order":4,"path":"objects/obj_solid_tile/obj_solid_tile.yy",},
     {"name":"obj_transferHandler","order":6,"path":"objects/obj_transferHandler/obj_transferHandler.yy",},
+    {"name":"p_enem","order":1,"path":"paths/p_enem/p_enem.yy",},
     {"name":"r_arcwolf","order":9,"path":"rooms/r_arcwolf/r_arcwolf.yy",},
     {"name":"r_bear","order":7,"path":"rooms/r_bear/r_bear.yy",},
     {"name":"r_bison","order":11,"path":"rooms/r_bison/r_bison.yy",},

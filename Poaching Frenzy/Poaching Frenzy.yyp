@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Poaching Frenzy",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -41,11 +41,12 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Poaching Frenzy",
   "resources":[
@@ -70,6 +71,7 @@
     {"id":{"name":"obj_to_Boar","path":"objects/obj_to_Boar/obj_to_Boar.yy",},},
     {"id":{"name":"obj_transferHandler","path":"objects/obj_transferHandler/obj_transferHandler.yy",},},
     {"id":{"name":"p_dmg","path":"paths/p_dmg/p_dmg.yy",},},
+    {"id":{"name":"p_enem","path":"paths/p_enem/p_enem.yy",},},
     {"id":{"name":"r_arcwolf","path":"rooms/r_arcwolf/r_arcwolf.yy",},},
     {"id":{"name":"r_bear","path":"rooms/r_bear/r_bear.yy",},},
     {"id":{"name":"r_bison","path":"rooms/r_bison/r_bison.yy",},},
