@@ -1,8 +1,17 @@
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 05AD748F
+/// @DnDComment : prevents rapid fire
 /// @DnDArgument : "var" "cooldown"
-if(cooldown == 0){	/// @DnDAction : YoYo Games.Random.Randomize
+if(cooldown == 0){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 2FC733A4
+	/// @DnDParent : 05AD748F
+	/// @DnDArgument : "expr" "1"
+	/// @DnDArgument : "var" "cooldown"
+	cooldown = 1;
+
+	/// @DnDAction : YoYo Games.Random.Randomize
 	/// @DnDVersion : 1
 	/// @DnDHash : 47D93D8B
 	/// @DnDParent : 05AD748F
@@ -46,14 +55,24 @@ if(cooldown == 0){	/// @DnDAction : YoYo Games.Random.Randomize
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 2F24A156
-	/// @DnDInput : 2
 	/// @DnDParent : 05AD748F
 	/// @DnDArgument : "expr" "1"
-	/// @DnDArgument : "expr_1" "meleeDamage"
 	/// @DnDArgument : "var" "newAttack"
-	/// @DnDArgument : "var_1" "attackVal"
 	newAttack = 1;
-	attackVal = meleeDamage;}
+
+	/// @DnDAction : YoYo Games.Instances.Set_Alarm
+	/// @DnDVersion : 1
+	/// @DnDHash : 69946439
+	/// @DnDParent : 05AD748F
+	alarm_set(0, 30);
+
+	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 343E81C4
+	/// @DnDParent : 05AD748F
+	/// @DnDArgument : "soundid" "snd_dagger"
+	/// @DnDSaveInfo : "soundid" "snd_dagger"
+	audio_play_sound(snd_dagger, 0, 0, 1.0, undefined, 1.0);}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1

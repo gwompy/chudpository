@@ -226,15 +226,25 @@ sealHealth = 70;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 2BA6AC88
-/// @DnDComment : this block handles vars$(13_10)needed for functionality
+/// @DnDComment : this block handles misc. vars$(13_10)needed for functionality
+/// @DnDInput : 5
+/// @DnDArgument : "expr_4" "false"
 /// @DnDArgument : "var" "newAttack"
+/// @DnDArgument : "var_1" "enemAttack"
+/// @DnDArgument : "var_2" "enemStart"
+/// @DnDArgument : "var_3" "showInv"
+/// @DnDArgument : "var_4" "has_consumable"
 newAttack = 0;
+enemAttack = 0;
+enemStart = 0;
+showInv = 0;
+has_consumable = false;
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 0B9311A9
 /// @DnDComment : enemHealth is used during programming to$(13_10)determine which animal's health to display$(13_10)and modify.
-/// @DnDArgument : "code" "//Idea provided by AI$(13_10)$(13_10)// Get the current room's name$(13_10)// without unnecessary text$(13_10)room_name = room_get_name(room);$(13_10)$(13_10)// Split the name to extract the animal identifier (e.g., "boar")$(13_10)animal_parts = string_split(room_name, "_");$(13_10)animal = animal_parts[1]; // Second part after splitting by "_"$(13_10)$(13_10)// Construct the health variable name (e.g., "boarHealth")$(13_10)enemHealth = variable_instance_get(obj_battle_interface, animal + "Health");"
+/// @DnDArgument : "code" "//Idea provided by AI$(13_10)$(13_10)// Get the current room's name$(13_10)// without unnecessary text$(13_10)room_name = room_get_name(room);$(13_10)$(13_10)// Split the name to extract the animal identifier (e.g., "boar")$(13_10)animal_parts = string_split(room_name, "_");$(13_10)animal = animal_parts[1]; // Second part after splitting by "_"$(13_10)$(13_10)// Construct the variable name (e.g., "boarHealth")$(13_10)enemHealth = variable_instance_get(obj_battle_interface, animal + "Health");$(13_10)enemAL = variable_instance_get(obj_battle_interface, animal + "AL");$(13_10)enemAH = variable_instance_get(obj_battle_interface, animal + "AH");"
 //Idea provided by AI
 
 // Get the current room's name
@@ -245,14 +255,16 @@ room_name = room_get_name(room);
 animal_parts = string_split(room_name, "_");
 animal = animal_parts[1]; // Second part after splitting by "_"
 
-// Construct the health variable name (e.g., "boarHealth")
+// Construct the variable name (e.g., "boarHealth")
 enemHealth = variable_instance_get(obj_battle_interface, animal + "Health");
+enemAL = variable_instance_get(obj_battle_interface, animal + "AL");
+enemAH = variable_instance_get(obj_battle_interface, animal + "AH");
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 256D3F70
 /// @DnDComment : for making the damage bounce
-/// @DnDArgument : "code" "//Idea by AI$(13_10)$(13_10)// Path progress (0 = start, 1 = end)$(13_10)meleeDamage_pathProgress = 0;$(13_10)$(13_10)// Speed of movement along the path$(13_10)// smooth movement hopefully$(13_10)meleeDamage_pathSpeed = 1000 / (path_get_length(p_dmg) * room_speed);$(13_10)$(13_10)// Store the current X/Y for drawing$(13_10)meleeDamage_drawX = 0;$(13_10)meleeDamage_drawY = 0;$(13_10)$(13_10)//attack cooldown$(13_10)cooldown = 0;"
+/// @DnDArgument : "code" "//Idea by AI$(13_10)$(13_10)// Path progress (0 = start, 1 = end)$(13_10)meleeDamage_pathProgress = 0;$(13_10)$(13_10)// Speed of movement along the path$(13_10)// smooth movement hopefully$(13_10)meleeDamage_pathSpeed = 1000 / (path_get_length(p_dmg) * room_speed);$(13_10)$(13_10)// Store the current X/Y for drawing$(13_10)meleeDamage_drawX = 0;$(13_10)meleeDamage_drawY = 0;$(13_10)$(13_10)//Chud's attack cooldown$(13_10)cooldown = 0;$(13_10)$(13_10)$(13_10)$(13_10)//for enemy$(13_10)// Path progress (0 = start, 1 = end)$(13_10)enemDamage_pathProgress = 0;$(13_10)$(13_10)// Speed of movement along the path$(13_10)// smooth movement hopefully$(13_10)enemDamage_pathSpeed = 1000 / (path_get_length(p_enem) * room_speed);$(13_10)$(13_10)// Store the current X/Y for drawing$(13_10)enemDamage_drawX = 0;$(13_10)enemDamage_drawY = 0;"
 //Idea by AI
 
 // Path progress (0 = start, 1 = end)
@@ -266,5 +278,30 @@ meleeDamage_pathSpeed = 1000 / (path_get_length(p_dmg) * room_speed);
 meleeDamage_drawX = 0;
 meleeDamage_drawY = 0;
 
-//attack cooldown
+//Chud's attack cooldown
 cooldown = 0;
+
+
+
+//for enemy
+// Path progress (0 = start, 1 = end)
+enemDamage_pathProgress = 0;
+
+// Speed of movement along the path
+// smooth movement hopefully
+enemDamage_pathSpeed = 1000 / (path_get_length(p_enem) * room_speed);
+
+// Store the current X/Y for drawing
+enemDamage_drawX = 0;
+enemDamage_drawY = 0;
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 6E7D73BF
+/// @DnDArgument : "code" "//consumable list$(13_10)$(13_10)consumables = [$(13_10)"Energy Drink",$(13_10)"Animal Meat",$(13_10)];$(13_10)"
+//consumable list
+
+consumables = [
+"Energy Drink",
+"Animal Meat",
+];
