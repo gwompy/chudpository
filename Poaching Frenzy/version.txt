@@ -1,2 +1,0 @@
-the editor version is v2024.11.0.179
-use project tool to convert to your version when modifying project

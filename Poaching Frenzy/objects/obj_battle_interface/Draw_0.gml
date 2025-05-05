@@ -78,12 +78,12 @@ if(showInv == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
 	/// @DnDHash : 1C91E0AC
 	/// @DnDParent : 69566BE7
-	/// @DnDArgument : "code" "//check if consumables are in inventory$(13_10)$(13_10)for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)    var _item = obj_inventory.inventory[| i]; // Access ds_list element$(13_10)    if (array_contains(consumables, _item) != -1) { $(13_10)        has_consumable = true;$(13_10)        break;$(13_10)    }$(13_10)}$(13_10)"
+	/// @DnDArgument : "code" "//check if consumables are in inventory$(13_10)$(13_10)for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)    var _item = obj_inventory.inventory[| i]; // Access ds_list element$(13_10)    if (array_contains(consumables, _item.name) != 0) { $(13_10)        has_consumable = true;$(13_10)        break;$(13_10)    }$(13_10)}$(13_10)"
 	//check if consumables are in inventory
 	
 	for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {
 	    var _item = obj_inventory.inventory[| i]; // Access ds_list element
-	    if (array_contains(consumables, _item) != -1) { 
+	    if (array_contains(consumables, _item.name) != 0) { 
 	        has_consumable = true;
 	        break;
 	    }
@@ -99,7 +99,7 @@ if(showInv == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 		/// @DnDVersion : 1
 		/// @DnDHash : 62862728
 		/// @DnDParent : 7D79109B
-		/// @DnDArgument : "code" "var _y = 570;$(13_10)var _x = 50;$(13_10)var count = 0;$(13_10)var current_consumable_index = 0;$(13_10)$(13_10)draw_set_alpha(1);$(13_10)draw_set_font(fnt_battle);$(13_10)draw_set_halign(fa_left);$(13_10)$(13_10)// Draw consumables$(13_10)for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)    var _item = ds_list_find_value(obj_inventory.inventory, i);$(13_10)    $(13_10)    if (array_contains(consumables, _item.name) != -1) {$(13_10)        // Set color based on selection$(13_10)        draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);$(13_10)        draw_text(_x, _y, _item.name + " x" + string(_item.quantity));$(13_10)        current_consumable_index++;$(13_10)        $(13_10)        // Positioning$(13_10)        count++;$(13_10)        if (count < 3) { $(13_10)            _x += 400; $(13_10)        } else {$(13_10)            count = 0;$(13_10)            _y += 120;$(13_10)            _x = 50;$(13_10)        }$(13_10)    }$(13_10)}$(13_10)$(13_10)// Draw Back button$(13_10)draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);$(13_10)draw_text(_x, _y, "Back");$(13_10)$(13_10)// Reset color$(13_10)draw_set_color(c_white);"
+		/// @DnDArgument : "code" "var _y = 570;$(13_10)var _x = 50;$(13_10)var count = 0;$(13_10)var current_consumable_index = 0;$(13_10)$(13_10)draw_set_alpha(1);$(13_10)draw_set_font(fnt_battle);$(13_10)draw_set_halign(fa_left);$(13_10)$(13_10)// Draw consumables$(13_10)for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)    var _item = ds_list_find_value(obj_inventory.inventory, i);$(13_10)    $(13_10)    if (array_contains(consumables, _item.name) != 0) {$(13_10)        // Set color based on selection$(13_10)        draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);$(13_10)        draw_text(_x, _y, _item.name + " x" + string(_item.quantity));$(13_10)        current_consumable_index++;$(13_10)        $(13_10)        // Positioning$(13_10)        count++;$(13_10)        if (count < 3) { $(13_10)            _x += 400; $(13_10)        } else {$(13_10)            count = 0;$(13_10)            _y += 120;$(13_10)            _x = 50;$(13_10)        }$(13_10)    }$(13_10)}$(13_10)$(13_10)// Draw Back button$(13_10)draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);$(13_10)draw_text(_x, _y, "Back");$(13_10)$(13_10)// Reset color$(13_10)draw_set_color(c_white);"
 		var _y = 570;
 		var _x = 50;
 		var count = 0;
@@ -113,7 +113,7 @@ if(showInv == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 		for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {
 		    var _item = ds_list_find_value(obj_inventory.inventory, i);
 		    
-		    if (array_contains(consumables, _item.name) != -1) {
+		    if (array_contains(consumables, _item.name) != 0) {
 		        // Set color based on selection
 		        draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);
 		        draw_text(_x, _y, _item.name + " x" + string(_item.quantity));
