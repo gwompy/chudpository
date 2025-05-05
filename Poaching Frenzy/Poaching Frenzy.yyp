@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Poaching Frenzy",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -41,14 +41,16 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Poaching Frenzy",
   "resources":[
+    {"id":{"name":"fnt_attack","path":"fonts/fnt_attack/fnt_attack.yy",},},
     {"id":{"name":"fnt_battle","path":"fonts/fnt_battle/fnt_battle.yy",},},
     {"id":{"name":"fnt_inv","path":"fonts/fnt_inv/fnt_inv.yy",},},
     {"id":{"name":"obj_battle_interface","path":"objects/obj_battle_interface/obj_battle_interface.yy",},},
@@ -71,6 +73,7 @@
     {"id":{"name":"obj_picnic","path":"objects/obj_picnic/obj_picnic.yy",},},
     {"id":{"name":"obj_solid_tile","path":"objects/obj_solid_tile/obj_solid_tile.yy",},},
     {"id":{"name":"obj_to_Boar","path":"objects/obj_to_Boar/obj_to_Boar.yy",},},
+    {"id":{"name":"obj_toZone1","path":"objects/obj_toZone1/obj_toZone1.yy",},},
     {"id":{"name":"obj_transferHandler","path":"objects/obj_transferHandler/obj_transferHandler.yy",},},
     {"id":{"name":"p_dmg","path":"paths/p_dmg/p_dmg.yy",},},
     {"id":{"name":"p_enem","path":"paths/p_enem/p_enem.yy",},},
@@ -171,6 +174,7 @@
     {"id":{"name":"spr_solid_tile","path":"sprites/spr_solid_tile/spr_solid_tile.yy",},},
     {"id":{"name":"spr_stone","path":"sprites/spr_stone/spr_stone.yy",},},
     {"id":{"name":"spr_wood","path":"sprites/spr_wood/spr_wood.yy",},},
+    {"id":{"name":"spr_zone1","path":"sprites/spr_zone1/spr_zone1.yy",},},
     {"id":{"name":"ts_arid_grass","path":"tilesets/ts_arid_grass/ts_arid_grass.yy",},},
     {"id":{"name":"ts_cardboard","path":"tilesets/ts_cardboard/ts_cardboard.yy",},},
     {"id":{"name":"ts_clay","path":"tilesets/ts_clay/ts_clay.yy",},},

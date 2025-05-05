@@ -227,18 +227,21 @@ sealHealth = 70;
 /// @DnDVersion : 1
 /// @DnDHash : 2BA6AC88
 /// @DnDComment : this block handles misc. vars$(13_10)needed for functionality
-/// @DnDInput : 5
+/// @DnDInput : 6
 /// @DnDArgument : "expr_4" "false"
+/// @DnDArgument : "expr_5" "false"
 /// @DnDArgument : "var" "newAttack"
 /// @DnDArgument : "var_1" "enemAttack"
 /// @DnDArgument : "var_2" "enemStart"
 /// @DnDArgument : "var_3" "showInv"
 /// @DnDArgument : "var_4" "has_consumable"
+/// @DnDArgument : "var_5" "alarm_active"
 newAttack = 0;
 enemAttack = 0;
 enemStart = 0;
 showInv = 0;
 has_consumable = false;
+alarm_active = false;
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
@@ -298,8 +301,11 @@ enemDamage_drawY = 0;
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 6E7D73BF
-/// @DnDArgument : "code" "//consumable list$(13_10)$(13_10)consumables = [$(13_10)"Energy Drink",$(13_10)"Animal Meat",$(13_10)];$(13_10)"
+/// @DnDArgument : "code" "//consumable list$(13_10)$(13_10)selected_index = 0;$(13_10)menu_active = false;$(13_10)$(13_10)consumables = [$(13_10)"Energy Drink",$(13_10)"Animal Meat",$(13_10)];$(13_10)"
 //consumable list
+
+selected_index = 0;
+menu_active = false;
 
 consumables = [
 "Energy Drink",

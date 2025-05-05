@@ -32,6 +32,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fnt_attack","order":2,"path":"fonts/fnt_attack/fnt_attack.yy",},
     {"name":"fnt_battle","order":1,"path":"fonts/fnt_battle/fnt_battle.yy",},
     {"name":"obj_boar","order":3,"path":"objects/obj_boar/obj_boar.yy",},
     {"name":"obj_chud","order":1,"path":"objects/obj_chud/obj_chud.yy",},
@@ -49,6 +50,7 @@
     {"name":"obj_outsidedoor","order":3,"path":"objects/obj_outsidedoor/obj_outsidedoor.yy",},
     {"name":"obj_picnic","order":1,"path":"objects/obj_picnic/obj_picnic.yy",},
     {"name":"obj_solid_tile","order":4,"path":"objects/obj_solid_tile/obj_solid_tile.yy",},
+    {"name":"obj_toZone1","order":3,"path":"objects/obj_toZone1/obj_toZone1.yy",},
     {"name":"obj_transferHandler","order":6,"path":"objects/obj_transferHandler/obj_transferHandler.yy",},
     {"name":"p_enem","order":1,"path":"paths/p_enem/p_enem.yy",},
     {"name":"r_arcwolf","order":9,"path":"rooms/r_arcwolf/r_arcwolf.yy",},
@@ -133,6 +135,7 @@
     {"name":"spr_solid_tile","order":7,"path":"sprites/spr_solid_tile/spr_solid_tile.yy",},
     {"name":"spr_stone","order":7,"path":"sprites/spr_stone/spr_stone.yy",},
     {"name":"spr_wood","order":8,"path":"sprites/spr_wood/spr_wood.yy",},
+    {"name":"spr_zone1","order":2,"path":"sprites/spr_zone1/spr_zone1.yy",},
     {"name":"ts_cardboard","order":1,"path":"tilesets/ts_cardboard/ts_cardboard.yy",},
     {"name":"ts_clay","order":2,"path":"tilesets/ts_clay/ts_clay.yy",},
     {"name":"ts_cloth","order":3,"path":"tilesets/ts_cloth/ts_cloth.yy",},
