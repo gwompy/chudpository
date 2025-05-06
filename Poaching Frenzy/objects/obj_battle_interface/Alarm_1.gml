@@ -23,3 +23,8 @@ cooldown = 0;
 /// @DnDSaveInfo : "spriteind" "spr_battle_interface"
 sprite_index = spr_battle_interface;
 image_index = 0;
+
+/// @DnDAction : YoYo Games.Instances.Set_Alarm
+/// @DnDVersion : 1
+/// @DnDHash : 0FF625F5
+alarm_set(0, 30);

@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_chudette",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_chud","path":"objects/obj_chud/obj_chud.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_chudette",
   "overriddenProperties":[],
@@ -26,7 +28,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_chudette",
     "path":"sprites/spr_chudette/spr_chudette.yy",

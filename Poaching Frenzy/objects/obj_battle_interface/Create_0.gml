@@ -150,10 +150,10 @@ sealAL = 20;
 /// @DnDHash : 3E9A26DA
 /// @DnDComment : This statement holds the HP$(13_10)of all creatures. Furred, scaled,$(13_10)feathered, big, small.
 /// @DnDInput : 24
-/// @DnDArgument : "expr" "100"
-/// @DnDArgument : "expr_1" "100"
-/// @DnDArgument : "expr_2" "100"
-/// @DnDArgument : "expr_3" "100"
+/// @DnDArgument : "expr" "80"
+/// @DnDArgument : "expr_1" "60"
+/// @DnDArgument : "expr_2" "20"
+/// @DnDArgument : "expr_3" "150"
 /// @DnDArgument : "expr_4" "70"
 /// @DnDArgument : "expr_5" "150"
 /// @DnDArgument : "expr_6" "120"
@@ -198,10 +198,10 @@ sealAL = 20;
 /// @DnDArgument : "var_21" "arcwolfHealth"
 /// @DnDArgument : "var_22" "reindeerHealth"
 /// @DnDArgument : "var_23" "sealHealth"
-boarHealth = 100;
-wolfHealth = 100;
-sheepHealth = 100;
-bisonHealth = 100;
+boarHealth = 80;
+wolfHealth = 60;
+sheepHealth = 20;
+bisonHealth = 150;
 dogHealth = 70;
 lionHealth = 150;
 buffaloHealth = 120;
@@ -227,10 +227,11 @@ sealHealth = 70;
 /// @DnDVersion : 1
 /// @DnDHash : 2BA6AC88
 /// @DnDComment : this block handles misc. vars$(13_10)needed for functionality
-/// @DnDInput : 8
+/// @DnDInput : 11
 /// @DnDArgument : "expr_4" "false"
 /// @DnDArgument : "expr_5" "false"
 /// @DnDArgument : "expr_6" ""good""
+/// @DnDArgument : "expr_8" "false"
 /// @DnDArgument : "var" "newAttack"
 /// @DnDArgument : "var_1" "enemAttack"
 /// @DnDArgument : "var_2" "enemStart"
@@ -239,6 +240,9 @@ sealHealth = 70;
 /// @DnDArgument : "var_5" "alarm_active"
 /// @DnDArgument : "var_6" "condition"
 /// @DnDArgument : "var_7" "runFail"
+/// @DnDArgument : "var_8" "has_firearm"
+/// @DnDArgument : "var_9" "fireL"
+/// @DnDArgument : "var_10" "fireH"
 newAttack = 0;
 enemAttack = 0;
 enemStart = 0;
@@ -247,12 +251,93 @@ has_consumable = false;
 alarm_active = false;
 condition = "good";
 runFail = 0;
+has_firearm = false;
+fireL = 0;
+fireH = 0;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 6467D9F4
+/// @DnDComment : This statement holds the maximum HP$(13_10)of all creatures. Furred, scaled,$(13_10)feathered, big, small.
+/// @DnDInput : 24
+/// @DnDArgument : "expr" "80"
+/// @DnDArgument : "expr_1" "60"
+/// @DnDArgument : "expr_2" "20"
+/// @DnDArgument : "expr_3" "150"
+/// @DnDArgument : "expr_4" "70"
+/// @DnDArgument : "expr_5" "150"
+/// @DnDArgument : "expr_6" "120"
+/// @DnDArgument : "expr_7" "30"
+/// @DnDArgument : "expr_8" "25"
+/// @DnDArgument : "expr_9" "40"
+/// @DnDArgument : "expr_10" "70"
+/// @DnDArgument : "expr_11" "15"
+/// @DnDArgument : "expr_12" "200"
+/// @DnDArgument : "expr_13" "150"
+/// @DnDArgument : "expr_14" "20"
+/// @DnDArgument : "expr_15" "10"
+/// @DnDArgument : "expr_16" "180"
+/// @DnDArgument : "expr_17" "200"
+/// @DnDArgument : "expr_18" "50"
+/// @DnDArgument : "expr_19" "60"
+/// @DnDArgument : "expr_20" "300"
+/// @DnDArgument : "expr_21" "90"
+/// @DnDArgument : "expr_22" "120"
+/// @DnDArgument : "expr_23" "70"
+/// @DnDArgument : "var" "boarHealthM"
+/// @DnDArgument : "var_1" "wolfHealthM"
+/// @DnDArgument : "var_2" "sheepHealthM"
+/// @DnDArgument : "var_3" "bisonHealthM"
+/// @DnDArgument : "var_4" "dogHealthM"
+/// @DnDArgument : "var_5" "lionHealthM"
+/// @DnDArgument : "var_6" "buffaloHealthM"
+/// @DnDArgument : "var_7" "gazHealthM"
+/// @DnDArgument : "var_8" "scorpionHealthM"
+/// @DnDArgument : "var_9" "rfoxHealthM"
+/// @DnDArgument : "var_10" "peccHealthM"
+/// @DnDArgument : "var_11" "jackHealthM"
+/// @DnDArgument : "var_12" "gatorHealthM"
+/// @DnDArgument : "var_13" "turtleHealthM"
+/// @DnDArgument : "var_14" "nutriaHealthM"
+/// @DnDArgument : "var_15" "fishHealthM"
+/// @DnDArgument : "var_16" "jagHealthM"
+/// @DnDArgument : "var_17" "snakeHealthM"
+/// @DnDArgument : "var_18" "capyHealthM"
+/// @DnDArgument : "var_19" "okapiHealthM"
+/// @DnDArgument : "var_20" "bearHealthM"
+/// @DnDArgument : "var_21" "arcwolfHealthM"
+/// @DnDArgument : "var_22" "reindeerHealthM"
+/// @DnDArgument : "var_23" "sealHealthM"
+boarHealthM = 80;
+wolfHealthM = 60;
+sheepHealthM = 20;
+bisonHealthM = 150;
+dogHealthM = 70;
+lionHealthM = 150;
+buffaloHealthM = 120;
+gazHealthM = 30;
+scorpionHealthM = 25;
+rfoxHealthM = 40;
+peccHealthM = 70;
+jackHealthM = 15;
+gatorHealthM = 200;
+turtleHealthM = 150;
+nutriaHealthM = 20;
+fishHealthM = 10;
+jagHealthM = 180;
+snakeHealthM = 200;
+capyHealthM = 50;
+okapiHealthM = 60;
+bearHealthM = 300;
+arcwolfHealthM = 90;
+reindeerHealthM = 120;
+sealHealthM = 70;
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 0B9311A9
 /// @DnDComment : enemHealth is used during programming to$(13_10)determine which animal's health to display$(13_10)and modify.
-/// @DnDArgument : "code" "//Idea provided by AI$(13_10)$(13_10)// Get the current room's name$(13_10)// without unnecessary text$(13_10)room_name = room_get_name(room);$(13_10)$(13_10)// Split the name to extract the animal identifier (e.g., "boar")$(13_10)animal_parts = string_split(room_name, "_");$(13_10)animal = animal_parts[1]; // Second part after splitting by "_"$(13_10)$(13_10)// Construct the variable name (e.g., "boarHealth")$(13_10)enemHealth = variable_instance_get(obj_battle_interface, animal + "Health");$(13_10)enemAL = variable_instance_get(obj_battle_interface, animal + "AL");$(13_10)enemAH = variable_instance_get(obj_battle_interface, animal + "AH");"
+/// @DnDArgument : "code" "//Idea provided by AI$(13_10)$(13_10)// Get the current room's name$(13_10)// without unnecessary text$(13_10)room_name = room_get_name(room);$(13_10)$(13_10)// Split the name to extract the animal identifier (e.g., "boar")$(13_10)animal_parts = string_split(room_name, "_");$(13_10)animal = animal_parts[1]; // Second part after splitting by "_"$(13_10)$(13_10)// Construct the variable name (e.g., "boarHealth")$(13_10)enemHealth = variable_instance_get(obj_battle_interface, animal + "Health");$(13_10)enemAL = variable_instance_get(obj_battle_interface, animal + "AL");$(13_10)enemAH = variable_instance_get(obj_battle_interface, animal + "AH");$(13_10)enemMax = variable_instance_get(obj_battle_interface, animal + "HealthM");"
 //Idea provided by AI
 
 // Get the current room's name
@@ -267,6 +352,7 @@ animal = animal_parts[1]; // Second part after splitting by "_"
 enemHealth = variable_instance_get(obj_battle_interface, animal + "Health");
 enemAL = variable_instance_get(obj_battle_interface, animal + "AL");
 enemAH = variable_instance_get(obj_battle_interface, animal + "AH");
+enemMax = variable_instance_get(obj_battle_interface, animal + "HealthM");
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
@@ -306,7 +392,8 @@ enemDamage_drawY = 0;
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 6E7D73BF
-/// @DnDArgument : "code" "//consumable list$(13_10)$(13_10)selected_index = 0;$(13_10)menu_active = false;$(13_10)$(13_10)consumables = [$(13_10)"Energy Drink",$(13_10)"Animal Meat",$(13_10)];$(13_10)"
+/// @DnDComment : inventory/misc variables
+/// @DnDArgument : "code" "//consumable list$(13_10)$(13_10)selected_index = 0;$(13_10)menu_active = false;$(13_10)$(13_10)consumables = [$(13_10)"Energy Drink",$(13_10)"Animal Meat",$(13_10)];$(13_10)$(13_10)firearms = [$(13_10)"Uzi",$(13_10)"AK-47",$(13_10)"Anti Material Rifle",$(13_10)"Rocket Launcher",$(13_10)"SMG",$(13_10)];$(13_10)$(13_10)enemHealthpercentage = enemHealth/enemMax *100$(13_10)chudHealthpercentage = global.chudHealth/obj_Health.max_health *100"
 //consumable list
 
 selected_index = 0;
@@ -316,3 +403,14 @@ consumables = [
 "Energy Drink",
 "Animal Meat",
 ];
+
+firearms = [
+"Uzi",
+"AK-47",
+"Anti Material Rifle",
+"Rocket Launcher",
+"SMG",
+];
+
+enemHealthpercentage = enemHealth/enemMax *100
+chudHealthpercentage = global.chudHealth/obj_Health.max_health *100

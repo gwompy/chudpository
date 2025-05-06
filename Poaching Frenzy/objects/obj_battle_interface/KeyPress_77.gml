@@ -23,8 +23,9 @@ if(cooldown == 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDParent : 05AD748F
 	/// @DnDArgument : "var" "meleeDamage"
 	/// @DnDArgument : "type" "1"
-	/// @DnDArgument : "max" "10"
-	meleeDamage = floor(random_range(0, 10 + 1));
+	/// @DnDArgument : "min" "5"
+	/// @DnDArgument : "max" "15"
+	meleeDamage = floor(random_range(5, 15 + 1));
 
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1

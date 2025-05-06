@@ -10,12 +10,12 @@ draw_self();
 /// @DnDArgument : "y1" "500"
 /// @DnDArgument : "x2" "550"
 /// @DnDArgument : "y2" "520"
-/// @DnDArgument : "value" "global.chudHealth"
+/// @DnDArgument : "value" "chudHealthpercentage"
 /// @DnDArgument : "backcol" "$FFAAACFF"
 /// @DnDArgument : "barcol" "$FF2121FF"
 /// @DnDArgument : "mincol" "$FF000000"
 /// @DnDArgument : "maxcol" "$FF0000FF"
-draw_healthbar(225, 500, 550, 520, global.chudHealth, $FFAAACFF & $FFFFFF, $FF000000 & $FFFFFF, $FF0000FF & $FFFFFF, 0, (($FFAAACFF>>24) != 0), (($FF2121FF>>24) != 0));
+draw_healthbar(225, 500, 550, 520, chudHealthpercentage, $FFAAACFF & $FFFFFF, $FF000000 & $FFFFFF, $FF0000FF & $FFFFFF, 0, (($FFAAACFF>>24) != 0), (($FF2121FF>>24) != 0));
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Healthbar
 /// @DnDVersion : 1
@@ -25,12 +25,12 @@ draw_healthbar(225, 500, 550, 520, global.chudHealth, $FFAAACFF & $FFFFFF, $FF00
 /// @DnDArgument : "x2" "1200"
 /// @DnDArgument : "y2" "270"
 /// @DnDArgument : "direction" "1"
-/// @DnDArgument : "value" "enemHealth"
+/// @DnDArgument : "value" "enemHealthpercentage"
 /// @DnDArgument : "backcol" "$FFAAACFF"
 /// @DnDArgument : "barcol" "$FF2121FF"
 /// @DnDArgument : "mincol" "$FF000000"
 /// @DnDArgument : "maxcol" "$FF0000FF"
-draw_healthbar(850, 250, 1200, 270, enemHealth, $FFAAACFF & $FFFFFF, $FF000000 & $FFFFFF, $FF0000FF & $FFFFFF, 1, (($FFAAACFF>>24) != 0), (($FF2121FF>>24) != 0));
+draw_healthbar(850, 250, 1200, 270, enemHealthpercentage, $FFAAACFF & $FFFFFF, $FF000000 & $FFFFFF, $FF0000FF & $FFFFFF, 1, (($FFAAACFF>>24) != 0), (($FF2121FF>>24) != 0));
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
