@@ -1,3 +1,11 @@
+/// @DnDAction : YoYo Games.Instances.Set_Sprite
+/// @DnDVersion : 1
+/// @DnDHash : 05EC6386
+/// @DnDArgument : "spriteind" "spr_battle_interface"
+/// @DnDSaveInfo : "spriteind" "spr_battle_interface"
+sprite_index = spr_battle_interface;
+image_index = 0;
+
 /// @DnDAction : YoYo Games.Random.Randomize
 /// @DnDVersion : 1
 /// @DnDHash : 7D550C58
@@ -31,6 +39,12 @@ enemStart = 1;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 7BB50A68
+/// @DnDInput : 3
 /// @DnDArgument : "expr" "1"
+/// @DnDArgument : "expr_1" "false"
 /// @DnDArgument : "var" "enemAttack"
+/// @DnDArgument : "var_1" "alarm_active"
+/// @DnDArgument : "var_2" "runFail"
 enemAttack = 1;
+alarm_active = false;
+runFail = 0;

@@ -227,21 +227,26 @@ sealHealth = 70;
 /// @DnDVersion : 1
 /// @DnDHash : 2BA6AC88
 /// @DnDComment : this block handles misc. vars$(13_10)needed for functionality
-/// @DnDInput : 6
+/// @DnDInput : 8
 /// @DnDArgument : "expr_4" "false"
 /// @DnDArgument : "expr_5" "false"
+/// @DnDArgument : "expr_6" ""good""
 /// @DnDArgument : "var" "newAttack"
 /// @DnDArgument : "var_1" "enemAttack"
 /// @DnDArgument : "var_2" "enemStart"
 /// @DnDArgument : "var_3" "showInv"
 /// @DnDArgument : "var_4" "has_consumable"
 /// @DnDArgument : "var_5" "alarm_active"
+/// @DnDArgument : "var_6" "condition"
+/// @DnDArgument : "var_7" "runFail"
 newAttack = 0;
 enemAttack = 0;
 enemStart = 0;
 showInv = 0;
 has_consumable = false;
 alarm_active = false;
+condition = "good";
+runFail = 0;
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1

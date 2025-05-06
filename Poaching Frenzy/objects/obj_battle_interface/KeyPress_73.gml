@@ -19,10 +19,14 @@ if(cooldown == 0){	/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 74E8CF12
+		/// @DnDInput : 2
 		/// @DnDParent : 038B3965
 		/// @DnDArgument : "expr" "1"
+		/// @DnDArgument : "expr_1" "1"
 		/// @DnDArgument : "var" "showInv"
-		showInv = 1;}}
+		/// @DnDArgument : "var_1" "cooldown"
+		showInv = 1;
+		cooldown = 1;}}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
