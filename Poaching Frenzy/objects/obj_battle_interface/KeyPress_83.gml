@@ -6,7 +6,7 @@ if(cooldown == 0){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
 	/// @DnDHash : 35488903
 	/// @DnDParent : 07675F17
-	/// @DnDArgument : "code" "//reminder to replace "gun" with firearm names list$(13_10)$(13_10)$(13_10)//unable to make melee attacks while shooting$(13_10)cooldown = 1$(13_10)$(13_10)//check if consumables are in inventory$(13_10)$(13_10)for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)    var _item = obj_inventory.inventory[| i]; // Access ds_list element$(13_10)    if (array_contains(firearms, _item.name) != 0) { $(13_10)        has_firearm = true;$(13_10)        break;$(13_10)    }$(13_10)}$(13_10)$(13_10)$(13_10)//configuring damage values for each firearm$(13_10)if (ds_list_find_index(obj_inventory.inventory, "Uzi") != -1) {$(13_10)$(13_10)fireL = 10;$(13_10)fireH = 15;$(13_10)$(13_10)}$(13_10)$(13_10)if (ds_list_find_index(obj_inventory.inventory, "AK-47") != -1) {$(13_10)$(13_10)fireL = 10;$(13_10)fireH = 30;$(13_10)$(13_10)}$(13_10)$(13_10)$(13_10)if (ds_list_find_index(obj_inventory.inventory, "Anti Material Rifle") != -1) {$(13_10)$(13_10)fireL = 79;$(13_10)fireH = 80;$(13_10)$(13_10)}$(13_10)$(13_10)if (ds_list_find_index(obj_inventory.inventory, "Rocket Launcher") != -1) {$(13_10)$(13_10)fireL = 100;$(13_10)fireH = 100;$(13_10)$(13_10)}$(13_10)$(13_10)if (ds_list_find_index(obj_inventory.inventory, "SMG") != -1) {$(13_10)$(13_10)fireL = 10;$(13_10)fireH = 40;$(13_10)$(13_10)}$(13_10)$(13_10)//firearm is in posession $(13_10)if has_firearm = true {$(13_10)	$(13_10)	qte_active = true;$(13_10)	$(13_10)}$(13_10)$(13_10)// You brought a knife to a gun fight$(13_10)if has_firearm = false {$(13_10)    $(13_10)	audio_play_sound(snd_denied_action, 0, 0, 1.0, undefined, 1.0);$(13_10)	$(13_10)}"
+	/// @DnDArgument : "code" "//reminder to replace "gun" with firearm names list$(13_10)$(13_10)$(13_10)//unable to make melee attacks while shooting$(13_10)cooldown = 1$(13_10)$(13_10)//check if consumables are in inventory$(13_10)$(13_10)for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)    var _item = obj_inventory.inventory[| i]; // Access ds_list element$(13_10)    if (array_contains(firearms, _item.name) != 0) { $(13_10)        has_firearm = true;$(13_10)        break;$(13_10)    }$(13_10)}$(13_10)$(13_10)$(13_10)//configuring damage values for each firearm$(13_10)if _item.name == "Uzi" {$(13_10)$(13_10)fireL = 10;$(13_10)fireH = 15;$(13_10)$(13_10)}$(13_10)$(13_10)$(13_10)if _item.name == "AK-47" {$(13_10)$(13_10)fireL = 10;$(13_10)fireH = 30;$(13_10)$(13_10)}$(13_10)$(13_10)$(13_10)if _item.name == "Anti Material Rifle" {$(13_10)$(13_10)fireL = 79;$(13_10)fireH = 80;$(13_10)$(13_10)}$(13_10)$(13_10)if _item.name == "Rocket Launcher" {$(13_10)$(13_10)fireL = 100;$(13_10)fireH = 100;$(13_10)$(13_10)}$(13_10)$(13_10)if _item.name == "SMG" {$(13_10)$(13_10)fireL = 10;$(13_10)fireH = 40;$(13_10)$(13_10)}$(13_10)$(13_10)//firearm is in posession $(13_10)if has_firearm = true {$(13_10)	$(13_10)	obj_quicktimebar.qte_active = true;$(13_10)	$(13_10)}$(13_10)$(13_10)// You brought a knife to a gun fight$(13_10)if has_firearm = false {$(13_10)    $(13_10)	audio_play_sound(snd_denied_action, 0, 0, 1.0, undefined, 1.0);$(13_10)	$(13_10)}"
 	//reminder to replace "gun" with firearm names list
 	
 	
@@ -25,14 +25,15 @@ if(cooldown == 0){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	
 	
 	//configuring damage values for each firearm
-	if (ds_list_find_index(obj_inventory.inventory, "Uzi") != -1) {
+	if _item.name == "Uzi" {
 	
 	fireL = 10;
 	fireH = 15;
 	
 	}
 	
-	if (ds_list_find_index(obj_inventory.inventory, "AK-47") != -1) {
+	
+	if _item.name == "AK-47" {
 	
 	fireL = 10;
 	fireH = 30;
@@ -40,21 +41,21 @@ if(cooldown == 0){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	}
 	
 	
-	if (ds_list_find_index(obj_inventory.inventory, "Anti Material Rifle") != -1) {
+	if _item.name == "Anti Material Rifle" {
 	
 	fireL = 79;
 	fireH = 80;
 	
 	}
 	
-	if (ds_list_find_index(obj_inventory.inventory, "Rocket Launcher") != -1) {
+	if _item.name == "Rocket Launcher" {
 	
 	fireL = 100;
 	fireH = 100;
 	
 	}
 	
-	if (ds_list_find_index(obj_inventory.inventory, "SMG") != -1) {
+	if _item.name == "SMG" {
 	
 	fireL = 10;
 	fireH = 40;
@@ -64,7 +65,7 @@ if(cooldown == 0){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	//firearm is in posession 
 	if has_firearm = true {
 		
-		qte_active = true;
+		obj_quicktimebar.qte_active = true;
 		
 	}
 	

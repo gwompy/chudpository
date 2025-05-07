@@ -21,19 +21,22 @@ if(cooldown == 0){	/// @DnDAction : YoYo Games.Random.Randomize
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 454E4D54
+	/// @DnDComment : Run Succed
 	/// @DnDParent : 7BDEB71B
 	/// @DnDArgument : "var" "runCheck"
 	/// @DnDArgument : "op" "4"
 	/// @DnDArgument : "value" "7"
-	if(runCheck >= 7){	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+	if(runCheck >= 7){	/// @DnDAction : YoYo Games.Rooms.Go_To_Room
 		/// @DnDVersion : 1
-		/// @DnDHash : 6D208413
+		/// @DnDHash : 6A4AD88E
 		/// @DnDParent : 454E4D54
-		show_debug_message(string("debug message"));}
+		/// @DnDArgument : "room" "global.prevRoom"
+		room_goto(global.prevRoom);}
 
 	/// @DnDAction : YoYo Games.Common.Else
 	/// @DnDVersion : 1
 	/// @DnDHash : 6C173902
+	/// @DnDComment : Run Failed
 	/// @DnDParent : 7BDEB71B
 	else{	/// @DnDAction : YoYo Games.Instances.Set_Sprite
 		/// @DnDVersion : 1

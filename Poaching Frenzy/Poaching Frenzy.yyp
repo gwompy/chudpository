@@ -49,7 +49,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Poaching Frenzy",
   "resources":[
@@ -87,6 +87,7 @@
     {"id":{"name":"obj_to_Boar","path":"objects/obj_to_Boar/obj_to_Boar.yy",},},
     {"id":{"name":"obj_toZone1","path":"objects/obj_toZone1/obj_toZone1.yy",},},
     {"id":{"name":"obj_transferHandler","path":"objects/obj_transferHandler/obj_transferHandler.yy",},},
+    {"id":{"name":"obj_trashdebug","path":"objects/obj_trashdebug/obj_trashdebug.yy",},},
     {"id":{"name":"p_dmg","path":"paths/p_dmg/p_dmg.yy",},},
     {"id":{"name":"p_enem","path":"paths/p_enem/p_enem.yy",},},
     {"id":{"name":"r_arcwolf","path":"rooms/r_arcwolf/r_arcwolf.yy",},},
@@ -199,6 +200,7 @@
     {"id":{"name":"spr_smg","path":"sprites/spr_smg/spr_smg.yy",},},
     {"id":{"name":"spr_solid_tile","path":"sprites/spr_solid_tile/spr_solid_tile.yy",},},
     {"id":{"name":"spr_stone","path":"sprites/spr_stone/spr_stone.yy",},},
+    {"id":{"name":"spr_trashdebug","path":"sprites/spr_trashdebug/spr_trashdebug.yy",},},
     {"id":{"name":"spr_wood","path":"sprites/spr_wood/spr_wood.yy",},},
     {"id":{"name":"spr_zone1","path":"sprites/spr_zone1/spr_zone1.yy",},},
     {"id":{"name":"ts_arid_grass","path":"tilesets/ts_arid_grass/ts_arid_grass.yy",},},

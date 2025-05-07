@@ -14,3 +14,20 @@ global.meetChudette = 0;
 global.boarCreated = 0;
 global.hasFought = 0;
 global.chudHealth = 100;
+
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 0FDD8F13
+/// @DnDComment : Chud should automatically have these items
+/// @DnDArgument : "script" "additem"
+/// @DnDArgument : "arg" ""Energy Drink", 5"
+/// @DnDSaveInfo : "script" "additem"
+script_execute(additem, "Energy Drink", 5);
+
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 18671F84
+/// @DnDArgument : "script" "additem"
+/// @DnDArgument : "arg" ""Uzi",1"
+/// @DnDSaveInfo : "script" "additem"
+script_execute(additem, "Uzi",1);

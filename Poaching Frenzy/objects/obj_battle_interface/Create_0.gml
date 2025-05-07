@@ -393,7 +393,7 @@ enemDamage_drawY = 0;
 /// @DnDVersion : 1
 /// @DnDHash : 6E7D73BF
 /// @DnDComment : inventory/misc variables
-/// @DnDArgument : "code" "//consumable list$(13_10)$(13_10)selected_index = 0;$(13_10)menu_active = false;$(13_10)$(13_10)consumables = [$(13_10)"Energy Drink",$(13_10)"Animal Meat",$(13_10)];$(13_10)$(13_10)firearms = [$(13_10)"Uzi",$(13_10)"AK-47",$(13_10)"Anti Material Rifle",$(13_10)"Rocket Launcher",$(13_10)"SMG",$(13_10)];$(13_10)$(13_10)enemHealthpercentage = enemHealth/enemMax *100$(13_10)chudHealthpercentage = global.chudHealth/obj_Health.max_health *100"
+/// @DnDArgument : "code" "//consumable list$(13_10)$(13_10)selected_index = 0;$(13_10)menu_active = false;$(13_10)$(13_10)consumables = [$(13_10)"Energy Drink",$(13_10)"Animal Meat",$(13_10)];$(13_10)$(13_10)firearms = [$(13_10)"Uzi",$(13_10)"AK-47",$(13_10)"Anti Material Rifle",$(13_10)"Rocket Launcher",$(13_10)"SMG",$(13_10)];$(13_10)$(13_10)enemHealthpercentage = (enemHealth/enemMax)*100$(13_10)chudHealthpercentage = (global.chudHealth/global.max_health)*100"
 //consumable list
 
 selected_index = 0;
@@ -412,5 +412,5 @@ firearms = [
 "SMG",
 ];
 
-enemHealthpercentage = enemHealth/enemMax *100
-chudHealthpercentage = global.chudHealth/obj_Health.max_health *100
+enemHealthpercentage = (enemHealth/enemMax)*100
+chudHealthpercentage = (global.chudHealth/global.max_health)*100
