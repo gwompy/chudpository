@@ -122,3 +122,49 @@ if (showInv) {
     // Keep selection in bounds
     selected_index = clamp(selected_index, 0, total_options - 1);
 }
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 3E417256
+/// @DnDArgument : "var" "enemHealth"
+/// @DnDArgument : "op" "3"
+if(enemHealth <= 0){	/// @DnDAction : YoYo Games.Common.Execute_Script
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 4C8F4E59
+	/// @DnDParent : 3E417256
+	/// @DnDArgument : "script" "additem"
+	/// @DnDArgument : "arg" "enemReward,1"
+	/// @DnDSaveInfo : "script" "additem"
+	script_execute(additem, enemReward,1);
+
+	/// @DnDAction : YoYo Games.Random.Randomize
+	/// @DnDVersion : 1
+	/// @DnDHash : 764410FA
+	/// @DnDParent : 3E417256
+	randomize();
+
+	/// @DnDAction : YoYo Games.Random.Get_Random_Number
+	/// @DnDVersion : 1
+	/// @DnDHash : 17204D6D
+	/// @DnDParent : 3E417256
+	/// @DnDArgument : "var" "drinkReward"
+	/// @DnDArgument : "type" "1"
+	/// @DnDArgument : "max" "5"
+	drinkReward = floor(random_range(0, 5 + 1));
+
+	/// @DnDAction : YoYo Games.Common.Execute_Script
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 37C12022
+	/// @DnDComment : add random amount of$(13_10)energy drinks$(13_10)$(13_10)just in case shop doesn't get done
+	/// @DnDParent : 3E417256
+	/// @DnDArgument : "script" "additem"
+	/// @DnDArgument : "arg" ""Energy Drink",drinkReward"
+	/// @DnDSaveInfo : "script" "additem"
+	script_execute(additem, "Energy Drink",drinkReward);
+
+	/// @DnDAction : YoYo Games.Rooms.Go_To_Room
+	/// @DnDVersion : 1
+	/// @DnDHash : 1712E7F3
+	/// @DnDParent : 3E417256
+	/// @DnDArgument : "room" "global.prevRoom"
+	room_goto(global.prevRoom);}

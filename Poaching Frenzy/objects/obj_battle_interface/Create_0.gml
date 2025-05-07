@@ -337,7 +337,7 @@ sealHealthM = 70;
 /// @DnDVersion : 1
 /// @DnDHash : 0B9311A9
 /// @DnDComment : enemHealth is used during programming to$(13_10)determine which animal's health to display$(13_10)and modify.
-/// @DnDArgument : "code" "//Idea provided by AI$(13_10)$(13_10)// Get the current room's name$(13_10)// without unnecessary text$(13_10)room_name = room_get_name(room);$(13_10)$(13_10)// Split the name to extract the animal identifier (e.g., "boar")$(13_10)animal_parts = string_split(room_name, "_");$(13_10)animal = animal_parts[1]; // Second part after splitting by "_"$(13_10)$(13_10)// Construct the variable name (e.g., "boarHealth")$(13_10)enemHealth = variable_instance_get(obj_battle_interface, animal + "Health");$(13_10)enemAL = variable_instance_get(obj_battle_interface, animal + "AL");$(13_10)enemAH = variable_instance_get(obj_battle_interface, animal + "AH");$(13_10)enemMax = variable_instance_get(obj_battle_interface, animal + "HealthM");"
+/// @DnDArgument : "code" "//Idea provided by AI$(13_10)$(13_10)// Get the current room's name$(13_10)// without unnecessary text$(13_10)room_name = room_get_name(room);$(13_10)$(13_10)// Split the name to extract the animal identifier (e.g., "boar")$(13_10)animal_parts = string_split(room_name, "_");$(13_10)animal = animal_parts[1]; // Second part after splitting by "_"$(13_10)$(13_10)// Construct the variable name (e.g., "boarHealth")$(13_10)enemHealth = variable_instance_get(obj_battle_interface, animal + "Health");$(13_10)enemAL = variable_instance_get(obj_battle_interface, animal + "AL");$(13_10)enemAH = variable_instance_get(obj_battle_interface, animal + "AH");$(13_10)enemMax = variable_instance_get(obj_battle_interface, animal + "HealthM");$(13_10)$(13_10)//calculate which animal's pelt to recieve$(13_10)enemReward = variable_instance_get(obj_battle_interface, animal);$(13_10)$(13_10)if enemReward == "boar"{$(13_10)	enemReward = "Bornean Bearded Pig";	$(13_10)}$(13_10)$(13_10)if enemReward == "wolf"{$(13_10)	enemReward = "Ethiopian Wolves";	$(13_10)}$(13_10)$(13_10)if enemReward == "sheep"{$(13_10)	enemReward = "Guinea Sheep";	$(13_10)}$(13_10)$(13_10)if enemReward == "dog"{$(13_10)	enemReward = "African Wild Dog";	$(13_10)}$(13_10)$(13_10)if enemReward == "gaz"{$(13_10)	enemReward = "Gazelle";	$(13_10)}$(13_10)$(13_10)if enemReward == "scorpion"{$(13_10)	enemReward = "Deathstalker Scorpion";	$(13_10)}$(13_10)$(13_10)if enemReward == "rfox"{$(13_10)	enemReward = "Rüppell's Fox";	$(13_10)}$(13_10)$(13_10)if enemReward == "pecc"{$(13_10)	enemReward = "Peccary";	$(13_10)}$(13_10)$(13_10)if enemReward == "jack"{$(13_10)	enemReward = "Jackrabbit";	$(13_10)}$(13_10)$(13_10)if enemReward == "gator"{$(13_10)	enemReward = "American Alligator";	$(13_10)}$(13_10)$(13_10)if enemReward == "turtle"{$(13_10)	enemReward = "Snapping Turtle";	$(13_10)}$(13_10)$(13_10)if enemReward == "fish"{$(13_10)	enemReward = "Swamp Fish";	$(13_10)}$(13_10)$(13_10)if enemReward == "jag"{$(13_10)	enemReward = "Jaguar";	$(13_10)}$(13_10)$(13_10)if enemReward == "snake"{$(13_10)	enemReward = "Anaconda";	$(13_10)}$(13_10)$(13_10)if enemReward == "capy"{$(13_10)	enemReward = "Capybara";	$(13_10)}$(13_10)$(13_10)if enemReward == "bear"{$(13_10)	enemReward = "Polar Bear";	$(13_10)$(13_10)if enemReward == "arcwolf"{$(13_10)	enemReward = "Arctic Wolf";	$(13_10)}$(13_10)$(13_10)if enemReward == "seal"{$(13_10)	enemReward = "Harp Seal";	$(13_10)}"
 //Idea provided by AI
 
 // Get the current room's name
@@ -353,6 +353,80 @@ enemHealth = variable_instance_get(obj_battle_interface, animal + "Health");
 enemAL = variable_instance_get(obj_battle_interface, animal + "AL");
 enemAH = variable_instance_get(obj_battle_interface, animal + "AH");
 enemMax = variable_instance_get(obj_battle_interface, animal + "HealthM");
+
+//calculate which animal's pelt to recieve
+enemReward = variable_instance_get(obj_battle_interface, animal);
+
+if enemReward == "boar"{
+	enemReward = "Bornean Bearded Pig";	
+}
+
+if enemReward == "wolf"{
+	enemReward = "Ethiopian Wolves";	
+}
+
+if enemReward == "sheep"{
+	enemReward = "Guinea Sheep";	
+}
+
+if enemReward == "dog"{
+	enemReward = "African Wild Dog";	
+}
+
+if enemReward == "gaz"{
+	enemReward = "Gazelle";	
+}
+
+if enemReward == "scorpion"{
+	enemReward = "Deathstalker Scorpion";	
+}
+
+if enemReward == "rfox"{
+	enemReward = "Rüppell's Fox";	
+}
+
+if enemReward == "pecc"{
+	enemReward = "Peccary";	
+}
+
+if enemReward == "jack"{
+	enemReward = "Jackrabbit";	
+}
+
+if enemReward == "gator"{
+	enemReward = "American Alligator";	
+}
+
+if enemReward == "turtle"{
+	enemReward = "Snapping Turtle";	
+}
+
+if enemReward == "fish"{
+	enemReward = "Swamp Fish";	
+}
+
+if enemReward == "jag"{
+	enemReward = "Jaguar";	
+}
+
+if enemReward == "snake"{
+	enemReward = "Anaconda";	
+}
+
+if enemReward == "capy"{
+	enemReward = "Capybara";	
+}
+
+if enemReward == "bear"{
+	enemReward = "Polar Bear";	
+
+if enemReward == "arcwolf"{
+	enemReward = "Arctic Wolf";	
+}
+
+if enemReward == "seal"{
+	enemReward = "Harp Seal";	
+}
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
