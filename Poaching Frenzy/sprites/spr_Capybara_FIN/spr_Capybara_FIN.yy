@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"raw animals",
-    "path":"folders/Sprites/raw animals.yy",
+    "name":"Cooked Animals",
+    "path":"folders/Sprites/Cooked Animals.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
