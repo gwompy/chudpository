@@ -31,8 +31,3 @@ script_execute(additem, "Energy Drink", 5);
 /// @DnDArgument : "arg" ""Uzi",1"
 /// @DnDSaveInfo : "script" "additem"
 script_execute(additem, "Uzi",1);
-
-/// @DnDAction : YoYo Games.Instances.Set_Alarm
-/// @DnDVersion : 1
-/// @DnDHash : 65A42695
-alarm_set(0, 30);

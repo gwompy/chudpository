@@ -1,13 +1,16 @@
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
 /// @DnDHash : 54466947
-/// @DnDInput : 2
+/// @DnDInput : 3
 /// @DnDArgument : "value" "100"
 /// @DnDArgument : "value_1" "1"
+/// @DnDArgument : "value_2" "100"
 /// @DnDArgument : "var" "max_health"
 /// @DnDArgument : "var_1" "stage"
+/// @DnDArgument : "var_2" "health"
 global.max_health = 100;
 global.stage = 1;
+global.health = 100;
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
