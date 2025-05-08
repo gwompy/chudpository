@@ -192,6 +192,7 @@
     {"id":{"name":"spr_outdoor","path":"sprites/spr_outdoor/spr_outdoor.yy",},},
     {"id":{"name":"spr_Peccary","path":"sprites/spr_Peccary/spr_Peccary.yy",},},
     {"id":{"name":"spr_picnic","path":"sprites/spr_picnic/spr_picnic.yy",},},
+    {"id":{"name":"spr_placeholder","path":"sprites/spr_placeholder/spr_placeholder.yy",},},
     {"id":{"name":"spr_plaster","path":"sprites/spr_plaster/spr_plaster.yy",},},
     {"id":{"name":"spr_polarBear","path":"sprites/spr_polarBear/spr_polarBear.yy",},},
     {"id":{"name":"spr_reindeer","path":"sprites/spr_reindeer/spr_reindeer.yy",},},
