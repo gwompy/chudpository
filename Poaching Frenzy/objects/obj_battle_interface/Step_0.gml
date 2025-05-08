@@ -128,14 +128,34 @@ if (showInv) {
 /// @DnDHash : 3E417256
 /// @DnDArgument : "var" "enemHealth"
 /// @DnDArgument : "op" "3"
-if(enemHealth <= 0){	/// @DnDAction : YoYo Games.Common.Execute_Script
-	/// @DnDVersion : 1.1
-	/// @DnDHash : 4C8F4E59
+if(enemHealth <= 0){	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 6869F364
 	/// @DnDParent : 3E417256
-	/// @DnDArgument : "script" "additem"
-	/// @DnDArgument : "arg" "enemReward,1"
-	/// @DnDSaveInfo : "script" "additem"
-	script_execute(additem, enemReward,1);
+	/// @DnDArgument : "var" "condition"
+	/// @DnDArgument : "value" ""good""
+	if(condition == "good"){	/// @DnDAction : YoYo Games.Common.Execute_Script
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 4C8F4E59
+		/// @DnDParent : 6869F364
+		/// @DnDArgument : "script" "additem"
+		/// @DnDArgument : "arg" "enemReward,1"
+		/// @DnDSaveInfo : "script" "additem"
+		script_execute(additem, enemReward,1);}
+
+	/// @DnDAction : YoYo Games.Common.Else
+	/// @DnDVersion : 1
+	/// @DnDHash : 5CCD77C8
+	/// @DnDComment : low quality pelt
+	/// @DnDParent : 3E417256
+	else{	/// @DnDAction : YoYo Games.Common.Execute_Script
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 53207DCB
+		/// @DnDParent : 5CCD77C8
+		/// @DnDArgument : "script" "additem"
+		/// @DnDArgument : "arg" "enemReward + "Bad",1"
+		/// @DnDSaveInfo : "script" "additem"
+		script_execute(additem, enemReward + "Bad",1);}
 
 	/// @DnDAction : YoYo Games.Random.Randomize
 	/// @DnDVersion : 1
