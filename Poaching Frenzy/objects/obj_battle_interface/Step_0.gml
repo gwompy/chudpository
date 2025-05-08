@@ -188,3 +188,15 @@ if(enemHealth <= 0){	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDParent : 3E417256
 	/// @DnDArgument : "room" "global.prevRoom"
 	room_goto(global.prevRoom);}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 792EAD00
+/// @DnDArgument : "var" "global.chudHealth"
+/// @DnDArgument : "op" "3"
+if(global.chudHealth <= 0){	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+	/// @DnDVersion : 1
+	/// @DnDHash : 18C615EF
+	/// @DnDParent : 792EAD00
+	/// @DnDArgument : "msg" ""add it""
+	show_debug_message(string("add it"));}
