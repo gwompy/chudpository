@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_boar_walk",
-    "path":"sprites/spr_boar_walk/spr_boar_walk.yy",
+    "name":"spr_bornean_bearded_pig",
+    "path":"sprites/spr_bornean_bearded_pig/spr_bornean_bearded_pig.yy",
   },
   "spriteMaskId":null,
   "visible":true,
