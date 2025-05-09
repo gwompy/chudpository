@@ -6,11 +6,12 @@ draw_self();
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 4C58867E
-/// @DnDArgument : "code" "//make sure health draws correctly$(13_10)draw_set_alpha(1);$(13_10)draw_set_font(fnt_health);$(13_10)draw_set_halign(fa_left);$(13_10)draw_set_color(c_white);"
+/// @DnDArgument : "code" "//make sure health draws correctly$(13_10)draw_set_alpha(1);$(13_10)draw_set_font(fnt_health);$(13_10)draw_set_halign(fa_left);$(13_10)draw_set_valign(fa_top);$(13_10)draw_set_color(c_white);"
 //make sure health draws correctly
 draw_set_alpha(1);
 draw_set_font(fnt_health);
 draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 draw_set_color(c_white);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value

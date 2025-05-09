@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7b72f729-a4ba-464f-978c-1ac9b714fba6","name":"7b72f729-a4ba-464f-978c-1ac9b714fba6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"8270b57a-d805-43ad-8bac-36d49f9857c5","name":"8270b57a-d805-43ad-8bac-36d49f9857c5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":74,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"0fd4e1e5-a0c2-4e2c-bf5a-4f27f9d7f6b3","blendMode":0,"displayName":"default","isLocked":false,"name":"0fd4e1e5-a0c2-4e2c-bf5a-4f27f9d7f6b3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"f616f002-3c5c-4134-a0ae-ae2d66e3fb2a","blendMode":0,"displayName":"default","isLocked":false,"name":"f616f002-3c5c-4134-a0ae-ae2d66e3fb2a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_TVstand",
   "nineSlice":null,
@@ -63,16 +63,12 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
-    "seqHeight":74.0,
-    "seqWidth":145.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7b72f729-a4ba-464f-978c-1ac9b714fba6","path":"sprites/spr_TVstand/spr_TVstand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0edd3052-4a20-4a96-b6d5-7dbc8a933362","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"8270b57a-d805-43ad-8bac-36d49f9857c5","path":"sprites/spr_TVstand/spr_TVstand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3ce29f54-aa8c-4814-a502-ba762dbec869","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
