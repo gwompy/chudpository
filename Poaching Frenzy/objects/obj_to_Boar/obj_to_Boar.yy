@@ -28,7 +28,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_bornean_bearded_pig",
     "path":"sprites/spr_bornean_bearded_pig/spr_bornean_bearded_pig.yy",

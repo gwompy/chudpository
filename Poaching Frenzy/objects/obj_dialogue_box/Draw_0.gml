@@ -97,3 +97,50 @@ if(global.meetChudette == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	if (current_line < array_length(chudette_d)) {
 	    draw_text(_x, _y, chudette_d[current_line]);
 	    }}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 560AE847
+/// @DnDArgument : "var" "global.hasFought"
+/// @DnDArgument : "value" "1"
+if(global.hasFought == 1){	/// @DnDAction : YoYo Games.Instances.Set_Sprite
+	/// @DnDVersion : 1
+	/// @DnDHash : 1D5F104D
+	/// @DnDParent : 560AE847
+	/// @DnDArgument : "spriteind" "spr_chud_dialogue"
+	/// @DnDSaveInfo : "spriteind" "spr_chud_dialogue"
+	sprite_index = spr_chud_dialogue;
+	image_index = 0;
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Self
+	/// @DnDVersion : 1
+	/// @DnDHash : 13D7D173
+	/// @DnDParent : 560AE847
+	draw_self();
+
+	/// @DnDAction : YoYo Games.Common.Execute_Code
+	/// @DnDVersion : 1
+	/// @DnDHash : 36367CFD
+	/// @DnDParent : 560AE847
+	/// @DnDArgument : "code" "// changing visibility of self$(13_10)// used to be needed$(13_10)$(13_10)with (obj_dialogue_box) {$(13_10)  visible = true;$(13_10)}$(13_10)$(13_10)$(13_10)var _y = 3250; // Starting Y position$(13_10)var _x = 0; // Starting X position$(13_10)$(13_10)draw_set_alpha(1);$(13_10)draw_set_color(c_white);$(13_10)draw_set_font(fnt_inv);$(13_10)draw_set_halign(fa_left);$(13_10)draw_set_halign(fa_top);$(13_10)$(13_10)// draws the next line of dialogue$(13_10)if (current_line < array_length(postIntro)) {$(13_10)    draw_text(_x, _y, postIntro[current_line]);$(13_10)    }$(13_10)"
+	// changing visibility of self
+	// used to be needed
+	
+	with (obj_dialogue_box) {
+	  visible = true;
+	}
+	
+	
+	var _y = 3250; // Starting Y position
+	var _x = 0; // Starting X position
+	
+	draw_set_alpha(1);
+	draw_set_color(c_white);
+	draw_set_font(fnt_inv);
+	draw_set_halign(fa_left);
+	draw_set_halign(fa_top);
+	
+	// draws the next line of dialogue
+	if (current_line < array_length(postIntro)) {
+	    draw_text(_x, _y, postIntro[current_line]);
+	    }}

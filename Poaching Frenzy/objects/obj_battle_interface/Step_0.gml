@@ -157,6 +157,14 @@ if(enemHealth <= 0){	/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDSaveInfo : "script" "additem"
 		script_execute(additem, enemReward + "Bad",1);}
 
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 19BC3CBD
+	/// @DnDParent : 3E417256
+	/// @DnDArgument : "expr" "false"
+	/// @DnDArgument : "var" "enemAlive"
+	enemAlive = false;
+
 	/// @DnDAction : YoYo Games.Random.Randomize
 	/// @DnDVersion : 1
 	/// @DnDHash : 764410FA

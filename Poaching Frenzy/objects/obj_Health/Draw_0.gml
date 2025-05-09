@@ -19,9 +19,9 @@ draw_set_color(c_white);
 /// @DnDHash : 1BF73196
 /// @DnDArgument : "x" "82"
 /// @DnDArgument : "y" "9"
-/// @DnDArgument : "caption" ""Health: ""
+/// @DnDArgument : "caption" ""Vril: ""
 /// @DnDArgument : "var" "global.chudHealth"
-draw_text(82, 9, string("Health: ") + string(global.chudHealth));
+draw_text(82, 9, string("Vril: ") + string(global.chudHealth));
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Healthbar
 /// @DnDVersion : 1
