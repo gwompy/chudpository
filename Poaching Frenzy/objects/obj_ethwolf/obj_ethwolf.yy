@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_ethiopian_wolf",
+    "path":"sprites/spr_ethiopian_wolf/spr_ethiopian_wolf.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

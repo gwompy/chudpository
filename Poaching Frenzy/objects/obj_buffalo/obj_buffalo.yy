@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_bison_1",
-    "path":"sprites/spr_bison_1/spr_bison_1.yy",
+    "name":"spr_buffalo",
+    "path":"sprites/spr_buffalo/spr_buffalo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

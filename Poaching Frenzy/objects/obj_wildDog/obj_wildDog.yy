@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_african_wild_dog",
+    "path":"sprites/spr_african_wild_dog/spr_african_wild_dog.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

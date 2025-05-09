@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_placeholder",
-    "path":"sprites/spr_placeholder/spr_placeholder.yy",
+    "name":"spr_PC",
+    "path":"sprites/spr_PC/spr_PC.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_snapping_turtle",
+    "path":"sprites/spr_snapping_turtle/spr_snapping_turtle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

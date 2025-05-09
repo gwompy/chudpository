@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_swamp_fish",
+    "path":"sprites/spr_swamp_fish/spr_swamp_fish.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
