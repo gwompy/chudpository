@@ -99,7 +99,7 @@ if(showInv == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 		/// @DnDVersion : 1
 		/// @DnDHash : 62862728
 		/// @DnDParent : 7D79109B
-		/// @DnDArgument : "code" "var _y = 570;$(13_10)var _x = 50;$(13_10)var count = 0;$(13_10)var current_consumable_index = 0;$(13_10)$(13_10)draw_set_alpha(1);$(13_10)draw_set_font(fnt_battle);$(13_10)draw_set_halign(fa_left);$(13_10)draw_set_color(c_white);$(13_10)$(13_10)// Draw consumables$(13_10)for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)    var _item = ds_list_find_value(obj_inventory.inventory, i);$(13_10)    $(13_10)	$(13_10)    $(13_10)    // Set color based on selection$(13_10)    draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);$(13_10)    draw_text(_x, _y, _item.name + " x" + string(_item.quantity));$(13_10)    current_consumable_index++;$(13_10)        $(13_10)    // Positioning$(13_10)    count++;$(13_10)    if (count < 3) { $(13_10)        _x += 400; $(13_10)    } else {$(13_10)        count = 0;$(13_10)        _y += 120;$(13_10)        _x = 50;$(13_10)    }   $(13_10)}$(13_10)$(13_10)// Draw Back button$(13_10)draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);$(13_10)draw_text(_x, _y, "Back");$(13_10)$(13_10)// Reset color$(13_10)draw_set_color(c_white);"
+		/// @DnDArgument : "code" "var _y = 570;$(13_10)var _x = 50;$(13_10)var count = 0;$(13_10)var current_consumable_index = 0;$(13_10)$(13_10)draw_set_alpha(1);$(13_10)draw_set_font(fnt_battle);$(13_10)draw_set_halign(fa_left);$(13_10)draw_set_color(c_white);$(13_10)$(13_10)//draw back button first$(13_10)draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);$(13_10)draw_text(_x, _y, "Back");$(13_10)$(13_10)current_consumable_index++; $(13_10)count++;$(13_10)_x += 400; $(13_10)$(13_10)// Draw Energy Drink in second position if it exists$(13_10)var energy_drawn = false;$(13_10)for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)    var _item = ds_list_find_value(obj_inventory.inventory, i);$(13_10)    if (_item.name == "Energy Drink") {$(13_10)        draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);$(13_10)        draw_text(_x, _y, _item.name + " x" + string(_item.quantity));$(13_10)        current_consumable_index++;$(13_10)        energy_drawn = true;$(13_10)$(13_10)        // Positioning$(13_10)        count++;$(13_10)        if (count < 3) {$(13_10)            _x += 400;$(13_10)        } else {$(13_10)            count = 0;$(13_10)            _y += 120;$(13_10)            _x = 50;$(13_10)        }$(13_10)        break; // Only draw one Energy Drink$(13_10)    }$(13_10)}$(13_10)$(13_10)//Draw consumables$(13_10)for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)    var _item = ds_list_find_value(obj_inventory.inventory, i);$(13_10)$(13_10)    // Skip Energy Drink if already drawn$(13_10)    if (energy_drawn && _item.name == "Energy Drink") continue;$(13_10)$(13_10)    draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);$(13_10)    draw_text(_x, _y, _item.name + " x" + string(_item.quantity));$(13_10)    current_consumable_index++;$(13_10)$(13_10)    // Positioning$(13_10)    count++;$(13_10)    if (count < 3) {$(13_10)        _x += 400;$(13_10)    } else {$(13_10)        count = 0;$(13_10)        _y += 120;$(13_10)        _x = 50;$(13_10)    }$(13_10)}$(13_10)$(13_10)// Reset color$(13_10)draw_set_color(c_white);$(13_10)"
 		var _y = 570;
 		var _x = 50;
 		var count = 0;
@@ -110,31 +110,58 @@ if(showInv == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 		draw_set_halign(fa_left);
 		draw_set_color(c_white);
 		
-		// Draw consumables
+		//draw back button first
+		draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);
+		draw_text(_x, _y, "Back");
+		
+		current_consumable_index++; 
+		count++;
+		_x += 400; 
+		
+		// Draw Energy Drink in second position if it exists
+		var energy_drawn = false;
 		for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {
 		    var _item = ds_list_find_value(obj_inventory.inventory, i);
-		    
-			
-		    
-		    // Set color based on selection
+		    if (_item.name == "Energy Drink") {
+		        draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);
+		        draw_text(_x, _y, _item.name + " x" + string(_item.quantity));
+		        current_consumable_index++;
+		        energy_drawn = true;
+		
+		        // Positioning
+		        count++;
+		        if (count < 3) {
+		            _x += 400;
+		        } else {
+		            count = 0;
+		            _y += 120;
+		            _x = 50;
+		        }
+		        break; // Only draw one Energy Drink
+		    }
+		}
+		
+		//Draw consumables
+		for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {
+		    var _item = ds_list_find_value(obj_inventory.inventory, i);
+		
+		    // Skip Energy Drink if already drawn
+		    if (energy_drawn && _item.name == "Energy Drink") continue;
+		
 		    draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);
 		    draw_text(_x, _y, _item.name + " x" + string(_item.quantity));
 		    current_consumable_index++;
-		        
+		
 		    // Positioning
 		    count++;
-		    if (count < 3) { 
-		        _x += 400; 
+		    if (count < 3) {
+		        _x += 400;
 		    } else {
 		        count = 0;
 		        _y += 120;
 		        _x = 50;
-		    }   
+		    }
 		}
-		
-		// Draw Back button
-		draw_set_color(current_consumable_index == selected_index ? c_yellow : c_white);
-		draw_text(_x, _y, "Back");
 		
 		// Reset color
 		draw_set_color(c_white);}
