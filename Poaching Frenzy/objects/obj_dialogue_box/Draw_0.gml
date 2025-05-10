@@ -43,7 +43,7 @@ if(global.meetChudette == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
 	/// @DnDHash : 488EC7B7
 	/// @DnDParent : 5836C7B6
-	/// @DnDArgument : "code" "// checks which sprite should be drawn next$(13_10)$(13_10)if current_line == 0 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 1 sprite_index = spr_chud_dialogue;$(13_10)$(13_10)$(13_10)//boar arrives$(13_10)if current_line == 2 {$(13_10)    // only create the boar once$(13_10)	if !global.boarCreated {$(13_10)		instance_create_layer(2900, 1950, "fore", obj_boar);$(13_10)		global.boarCreated = true;$(13_10)	}$(13_10)}$(13_10)$(13_10)$(13_10)if current_line == 2 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 3 sprite_index = spr_chud_dialogue;$(13_10)if current_line == 5 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 6 sprite_index = spr_chud_dialogue;"
+	/// @DnDArgument : "code" "// checks which sprite should be drawn next$(13_10)$(13_10)if current_line == 0 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 1 sprite_index = spr_chud_dialogue;$(13_10)$(13_10)$(13_10)//boar arrives$(13_10)if current_line == 2 {$(13_10)    // only create the boar once$(13_10)	if !global.boarCreated {$(13_10)		instance_create_layer(2900, 1950, "fore", obj_boar_tutorial);$(13_10)		global.boarCreated = true;$(13_10)	}$(13_10)}$(13_10)$(13_10)$(13_10)if current_line == 2 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 3 sprite_index = spr_chud_dialogue;$(13_10)if current_line == 5 sprite_index = spr_chudette_dialogue;$(13_10)if current_line == 6 sprite_index = spr_chud_dialogue;"
 	// checks which sprite should be drawn next
 	
 	if current_line == 0 sprite_index = spr_chudette_dialogue;
@@ -54,7 +54,7 @@ if(global.meetChudette == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 	if current_line == 2 {
 	    // only create the boar once
 		if !global.boarCreated {
-			instance_create_layer(2900, 1950, "fore", obj_boar);
+			instance_create_layer(2900, 1950, "fore", obj_boar_tutorial);
 			global.boarCreated = true;
 		}
 	}
@@ -143,4 +143,51 @@ if(global.hasFought == 1){	/// @DnDAction : YoYo Games.Instances.Set_Sprite
 	// draws the next line of dialogue
 	if (current_line < array_length(postIntro)) {
 	    draw_text(_x, _y, postIntro[current_line]);
+	    }}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 5D919400
+/// @DnDArgument : "var" "global.noRide"
+/// @DnDArgument : "value" "1"
+if(global.noRide == 1){	/// @DnDAction : YoYo Games.Instances.Set_Sprite
+	/// @DnDVersion : 1
+	/// @DnDHash : 61511484
+	/// @DnDParent : 5D919400
+	/// @DnDArgument : "spriteind" "spr_chud_dialogue"
+	/// @DnDSaveInfo : "spriteind" "spr_chud_dialogue"
+	sprite_index = spr_chud_dialogue;
+	image_index = 0;
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Self
+	/// @DnDVersion : 1
+	/// @DnDHash : 3A58829E
+	/// @DnDParent : 5D919400
+	draw_self();
+
+	/// @DnDAction : YoYo Games.Common.Execute_Code
+	/// @DnDVersion : 1
+	/// @DnDHash : 40CDEA5F
+	/// @DnDParent : 5D919400
+	/// @DnDArgument : "code" "// changing visibility of self$(13_10)// used to be needed$(13_10)$(13_10)with (obj_dialogue_box) {$(13_10)  visible = true;$(13_10)}$(13_10)$(13_10)$(13_10)var _y = 3250; // Starting Y position$(13_10)var _x = 0; // Starting X position$(13_10)$(13_10)draw_set_alpha(1);$(13_10)draw_set_color(c_white);$(13_10)draw_set_font(fnt_inv);$(13_10)draw_set_halign(fa_left);$(13_10)draw_set_halign(fa_top);$(13_10)$(13_10)// draws the next line of dialogue$(13_10)if (current_line < array_length(noRide_d)) {$(13_10)    draw_text(_x, _y, noRide_d[current_line]);$(13_10)    }$(13_10)"
+	// changing visibility of self
+	// used to be needed
+	
+	with (obj_dialogue_box) {
+	  visible = true;
+	}
+	
+	
+	var _y = 3250; // Starting Y position
+	var _x = 0; // Starting X position
+	
+	draw_set_alpha(1);
+	draw_set_color(c_white);
+	draw_set_font(fnt_inv);
+	draw_set_halign(fa_left);
+	draw_set_halign(fa_top);
+	
+	// draws the next line of dialogue
+	if (current_line < array_length(noRide_d)) {
+	    draw_text(_x, _y, noRide_d[current_line]);
 	    }}

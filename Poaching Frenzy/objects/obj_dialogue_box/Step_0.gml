@@ -71,3 +71,26 @@ if(global.hasFought == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
 			global.hasFought = 2;
 	    }
 	}}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 64F4617C
+/// @DnDArgument : "var" "global.noRide"
+/// @DnDArgument : "value" "1"
+if(global.noRide == 1){	/// @DnDAction : YoYo Games.Common.Execute_Code
+	/// @DnDVersion : 1
+	/// @DnDHash : 55D01022
+	/// @DnDParent : 64F4617C
+	/// @DnDArgument : "code" "// idea provided by AI$(13_10)$(13_10)$(13_10)if keyboard_check_pressed(vk_space) {$(13_10)    current_line++;$(13_10)    $(13_10)    // hides box when last line is reached$(13_10)    if (current_line >= array_length(noRide_d)) {$(13_10)        current_line = 0;$(13_10)		global.noRide = 0;$(13_10)    }$(13_10)}$(13_10)"
+	// idea provided by AI
+	
+	
+	if keyboard_check_pressed(vk_space) {
+	    current_line++;
+	    
+	    // hides box when last line is reached
+	    if (current_line >= array_length(noRide_d)) {
+	        current_line = 0;
+			global.noRide = 0;
+	    }
+	}}
