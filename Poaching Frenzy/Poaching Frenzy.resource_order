@@ -99,6 +99,7 @@
     {"name":"r_arcwolf","order":9,"path":"rooms/r_arcwolf/r_arcwolf.yy",},
     {"name":"r_bear","order":7,"path":"rooms/r_bear/r_bear.yy",},
     {"name":"r_bison","order":11,"path":"rooms/r_bison/r_bison.yy",},
+    {"name":"r_boar1","order":25,"path":"rooms/r_boar1/r_boar1.yy",},
     {"name":"r_buffalo","order":14,"path":"rooms/r_buffalo/r_buffalo.yy",},
     {"name":"r_capy","order":5,"path":"rooms/r_capy/r_capy.yy",},
     {"name":"r_chudhouse1","order":14,"path":"rooms/r_chudhouse1/r_chudhouse1.yy",},

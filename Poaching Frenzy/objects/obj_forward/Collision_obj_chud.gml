@@ -7,9 +7,9 @@ if(room == r_zone1){	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 38BFC584
 	/// @DnDParent : 2FFA75DF
-	/// @DnDArgument : "var" "global.boarAlive"
+	/// @DnDArgument : "var" "global.boar1Alive"
 	/// @DnDArgument : "value" "false"
-	if(global.boarAlive == false){	/// @DnDAction : YoYo Games.Common.If_Variable
+	if(global.boar1Alive == false){	/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 4E84F722
 		/// @DnDParent : 38BFC584

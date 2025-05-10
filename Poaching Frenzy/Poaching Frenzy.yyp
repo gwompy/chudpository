@@ -125,6 +125,7 @@
     {"id":{"name":"r_bear","path":"rooms/r_bear/r_bear.yy",},},
     {"id":{"name":"r_bison","path":"rooms/r_bison/r_bison.yy",},},
     {"id":{"name":"r_boar","path":"rooms/r_boar/r_boar.yy",},},
+    {"id":{"name":"r_boar1","path":"rooms/r_boar1/r_boar1.yy",},},
     {"id":{"name":"r_buffalo","path":"rooms/r_buffalo/r_buffalo.yy",},},
     {"id":{"name":"r_capy","path":"rooms/r_capy/r_capy.yy",},},
     {"id":{"name":"r_chudhouse1","path":"rooms/r_chudhouse1/r_chudhouse1.yy",},},
@@ -320,6 +321,7 @@
     {"roomId":{"name":"r_seal","path":"rooms/r_seal/r_seal.yy",},},
     {"roomId":{"name":"r_death","path":"rooms/r_death/r_death.yy",},},
     {"roomId":{"name":"r_chudhouse1","path":"rooms/r_chudhouse1/r_chudhouse1.yy",},},
+    {"roomId":{"name":"r_boar1","path":"rooms/r_boar1/r_boar1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -7,6 +7,5 @@ if(global.hasFought == 2){	/// @DnDAction : YoYo Games.Rooms.Go_To_Room
 	/// @DnDVersion : 1
 	/// @DnDHash : 4DED45FB
 	/// @DnDParent : 5804272D
-	/// @DnDArgument : "room" "r_boar"
-	/// @DnDSaveInfo : "room" "r_boar"
-	room_goto(r_boar);}
+	/// @DnDArgument : "room" "r_boar1"
+	room_goto(r_boar1);}
