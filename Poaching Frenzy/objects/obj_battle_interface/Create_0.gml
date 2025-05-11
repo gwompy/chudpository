@@ -4,7 +4,7 @@
 /// @DnDComment : block holds high end for attack ranges
 /// @DnDInput : 25
 /// @DnDArgument : "expr" "10"
-/// @DnDArgument : "expr_1" "30"
+/// @DnDArgument : "expr_1" "25"
 /// @DnDArgument : "expr_2" "1"
 /// @DnDArgument : "expr_3" "5"
 /// @DnDArgument : "expr_4" "30"
@@ -50,7 +50,7 @@
 /// @DnDArgument : "var_23" "sealAH"
 /// @DnDArgument : "var_24" "boar1AH"
 boarAH = 10;
-wolfAH = 30;
+wolfAH = 25;
 sheepAH = 1;
 bisonAH = 5;
 dogAH = 30;
@@ -81,7 +81,7 @@ boar1AH = 10;
 /// @DnDComment : block holds low end for attack ranges
 /// @DnDInput : 25
 /// @DnDArgument : "expr" "5"
-/// @DnDArgument : "expr_1" "25"
+/// @DnDArgument : "expr_1" "20"
 /// @DnDArgument : "expr_2" "1"
 /// @DnDArgument : "expr_3" "1"
 /// @DnDArgument : "expr_4" "25"
@@ -126,7 +126,7 @@ boar1AH = 10;
 /// @DnDArgument : "var_23" "sealAL"
 /// @DnDArgument : "var_24" "boar1AL"
 boarAL = 5;
-wolfAL = 25;
+wolfAL = 20;
 sheepAL = 1;
 bisonAL = 1;
 dogAL = 25;

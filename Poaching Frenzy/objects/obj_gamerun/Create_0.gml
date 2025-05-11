@@ -22,9 +22,9 @@ global.noRide = 0;
 /// @DnDHash : 0FDD8F13
 /// @DnDComment : Chud should automatically have these items
 /// @DnDArgument : "script" "additem"
-/// @DnDArgument : "arg" ""Energy Drink", 10"
+/// @DnDArgument : "arg" ""Energy Drink", 12"
 /// @DnDSaveInfo : "script" "additem"
-script_execute(additem, "Energy Drink", 10);
+script_execute(additem, "Energy Drink", 12);
 
 /// @DnDAction : YoYo Games.Common.Execute_Script
 /// @DnDVersion : 1.1
