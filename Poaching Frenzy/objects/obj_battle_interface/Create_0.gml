@@ -2,9 +2,9 @@
 /// @DnDVersion : 1
 /// @DnDHash : 6E024493
 /// @DnDComment : block holds high end for attack ranges
-/// @DnDInput : 24
+/// @DnDInput : 25
 /// @DnDArgument : "expr" "10"
-/// @DnDArgument : "expr_1" "30"
+/// @DnDArgument : "expr_1" "25"
 /// @DnDArgument : "expr_2" "1"
 /// @DnDArgument : "expr_3" "5"
 /// @DnDArgument : "expr_4" "30"
@@ -23,6 +23,7 @@
 /// @DnDArgument : "expr_21" "30"
 /// @DnDArgument : "expr_22" "20"
 /// @DnDArgument : "expr_23" "25"
+/// @DnDArgument : "expr_24" "10"
 /// @DnDArgument : "var" "boarAH"
 /// @DnDArgument : "var_1" "wolfAH"
 /// @DnDArgument : "var_2" "sheepAH"
@@ -47,8 +48,9 @@
 /// @DnDArgument : "var_21" "arcwolfAH"
 /// @DnDArgument : "var_22" "reindeerAH"
 /// @DnDArgument : "var_23" "sealAH"
+/// @DnDArgument : "var_24" "boar1AH"
 boarAH = 10;
-wolfAH = 30;
+wolfAH = 25;
 sheepAH = 1;
 bisonAH = 5;
 dogAH = 30;
@@ -71,14 +73,15 @@ bearAH = 75;
 arcwolfAH = 30;
 reindeerAH = 20;
 sealAH = 25;
+boar1AH = 10;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 46C3C482
 /// @DnDComment : block holds low end for attack ranges
-/// @DnDInput : 24
+/// @DnDInput : 25
 /// @DnDArgument : "expr" "5"
-/// @DnDArgument : "expr_1" "25"
+/// @DnDArgument : "expr_1" "20"
 /// @DnDArgument : "expr_2" "1"
 /// @DnDArgument : "expr_3" "1"
 /// @DnDArgument : "expr_4" "25"
@@ -96,6 +99,7 @@ sealAH = 25;
 /// @DnDArgument : "expr_21" "25"
 /// @DnDArgument : "expr_22" "10"
 /// @DnDArgument : "expr_23" "20"
+/// @DnDArgument : "expr_24" "5"
 /// @DnDArgument : "var" "boarAL"
 /// @DnDArgument : "var_1" "wolfAL"
 /// @DnDArgument : "var_2" "sheepAL"
@@ -120,8 +124,9 @@ sealAH = 25;
 /// @DnDArgument : "var_21" "arcwolfAL"
 /// @DnDArgument : "var_22" "reindeerAL"
 /// @DnDArgument : "var_23" "sealAL"
+/// @DnDArgument : "var_24" "boar1AL"
 boarAL = 5;
-wolfAL = 25;
+wolfAL = 20;
 sheepAL = 1;
 bisonAL = 1;
 dogAL = 25;
@@ -144,12 +149,13 @@ bearAL = 60;
 arcwolfAL = 25;
 reindeerAL = 10;
 sealAL = 20;
+boar1AL = 5;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 3E9A26DA
 /// @DnDComment : This statement holds the HP$(13_10)of all creatures. Furred, scaled,$(13_10)feathered, big, small.
-/// @DnDInput : 24
+/// @DnDInput : 25
 /// @DnDArgument : "expr" "80"
 /// @DnDArgument : "expr_1" "60"
 /// @DnDArgument : "expr_2" "20"
@@ -174,6 +180,7 @@ sealAL = 20;
 /// @DnDArgument : "expr_21" "90"
 /// @DnDArgument : "expr_22" "120"
 /// @DnDArgument : "expr_23" "70"
+/// @DnDArgument : "expr_24" "80"
 /// @DnDArgument : "var" "boarHealth"
 /// @DnDArgument : "var_1" "wolfHealth"
 /// @DnDArgument : "var_2" "sheepHealth"
@@ -198,6 +205,7 @@ sealAL = 20;
 /// @DnDArgument : "var_21" "arcwolfHealth"
 /// @DnDArgument : "var_22" "reindeerHealth"
 /// @DnDArgument : "var_23" "sealHealth"
+/// @DnDArgument : "var_24" "boar1Health"
 boarHealth = 80;
 wolfHealth = 60;
 sheepHealth = 20;
@@ -222,6 +230,7 @@ bearHealth = 300;
 arcwolfHealth = 90;
 reindeerHealth = 120;
 sealHealth = 70;
+boar1Health = 80;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -259,7 +268,7 @@ fireH = 0;
 /// @DnDVersion : 1
 /// @DnDHash : 6467D9F4
 /// @DnDComment : This statement holds the maximum HP$(13_10)of all creatures. Furred, scaled,$(13_10)feathered, big, small.
-/// @DnDInput : 24
+/// @DnDInput : 25
 /// @DnDArgument : "expr" "80"
 /// @DnDArgument : "expr_1" "60"
 /// @DnDArgument : "expr_2" "20"
@@ -284,6 +293,7 @@ fireH = 0;
 /// @DnDArgument : "expr_21" "90"
 /// @DnDArgument : "expr_22" "120"
 /// @DnDArgument : "expr_23" "70"
+/// @DnDArgument : "expr_24" "80"
 /// @DnDArgument : "var" "boarHealthM"
 /// @DnDArgument : "var_1" "wolfHealthM"
 /// @DnDArgument : "var_2" "sheepHealthM"
@@ -308,6 +318,7 @@ fireH = 0;
 /// @DnDArgument : "var_21" "arcwolfHealthM"
 /// @DnDArgument : "var_22" "reindeerHealthM"
 /// @DnDArgument : "var_23" "sealHealthM"
+/// @DnDArgument : "var_24" "boar1HealthM"
 boarHealthM = 80;
 wolfHealthM = 60;
 sheepHealthM = 20;
@@ -332,12 +343,13 @@ bearHealthM = 300;
 arcwolfHealthM = 90;
 reindeerHealthM = 120;
 sealHealthM = 70;
+boar1HealthM = 80;
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 0B9311A9
 /// @DnDComment : enemHealth is used during programming to$(13_10)determine which animal's health to display$(13_10)and modify.
-/// @DnDArgument : "code" "//Idea provided by AI$(13_10)$(13_10)// Get the current room's name$(13_10)// without unnecessary text$(13_10)room_name = room_get_name(room);$(13_10)$(13_10)// Split the name to extract the animal identifier (e.g., "boar")$(13_10)animal_parts = string_split(room_name, "_");$(13_10)animal = animal_parts[1]; // Second part after splitting by "_"$(13_10)$(13_10)// Construct the variable name (e.g., "boarHealth")$(13_10)enemHealth = variable_instance_get(obj_battle_interface, animal + "Health");$(13_10)enemAL = variable_instance_get(obj_battle_interface, animal + "AL");$(13_10)enemAH = variable_instance_get(obj_battle_interface, animal + "AH");$(13_10)enemMax = variable_instance_get(obj_battle_interface, animal + "HealthM");$(13_10)enemAlive = variable_instance_get(global, animal + "Alive");$(13_10)$(13_10)//calculate which animal's pelt to recieve$(13_10)enemReward = animal;$(13_10)$(13_10)//this naming convention is 100% NECESSARY$(13_10)$(13_10)if enemReward == "boar"{$(13_10)	enemReward = "bornean_bearded_pig";	$(13_10)}$(13_10)$(13_10)if enemReward == "wolf"{$(13_10)	enemReward = "ethiopian_wolves";	$(13_10)}$(13_10)$(13_10)if enemReward == "sheep"{$(13_10)	enemReward = "guinea_sheep";	$(13_10)}$(13_10)$(13_10)if enemReward == "dog"{$(13_10)	enemReward = "african_wild_dog";	$(13_10)}$(13_10)$(13_10)if enemReward == "gaz"{$(13_10)	enemReward = "gazelle";	$(13_10)}$(13_10)$(13_10)if enemReward == "scorpion"{$(13_10)	enemReward = "deathstalker_scorpion";	$(13_10)}$(13_10)$(13_10)if enemReward == "rfox"{$(13_10)	enemReward = "desert_fox";	$(13_10)}$(13_10)$(13_10)if enemReward == "pecc"{$(13_10)	enemReward = "peccary";	$(13_10)}$(13_10)$(13_10)if enemReward == "jack"{$(13_10)	enemReward = "jackrabbit";	$(13_10)}$(13_10)$(13_10)if enemReward == "gator"{$(13_10)	enemReward = "american_alligator";	$(13_10)}$(13_10)$(13_10)if enemReward == "turtle"{$(13_10)	enemReward = "snapping_turtle";	$(13_10)}$(13_10)$(13_10)if enemReward == "fish"{$(13_10)	enemReward = "swamp_fish";	$(13_10)}$(13_10)$(13_10)if enemReward == "jag"{$(13_10)	enemReward = "jaguar";	$(13_10)}$(13_10)$(13_10)if enemReward == "snake"{$(13_10)	enemReward = "anaconda";	$(13_10)}$(13_10)$(13_10)if enemReward == "capy"{$(13_10)	enemReward = "capybara";	$(13_10)}$(13_10)$(13_10)if enemReward == "bear"{$(13_10)	enemReward = "polar_bear";	$(13_10)}$(13_10)$(13_10)if enemReward == "arcwolf"{$(13_10)	enemReward = "arctic_wolf";	$(13_10)}$(13_10)$(13_10)if enemReward == "seal"{$(13_10)	enemReward = "harp_seal";	$(13_10)}"
+/// @DnDArgument : "code" "//Idea provided by AI$(13_10)$(13_10)// Get the current room's name$(13_10)// without unnecessary text$(13_10)room_name = room_get_name(room);$(13_10)$(13_10)// Split the name to extract the animal identifier (e.g., "boar")$(13_10)animal_parts = string_split(room_name, "_");$(13_10)animal = animal_parts[1]; // Second part after splitting by "_"$(13_10)$(13_10)// Construct the variable name (e.g., "boarHealth")$(13_10)enemHealth = variable_instance_get(obj_battle_interface, animal + "Health");$(13_10)enemAL = variable_instance_get(obj_battle_interface, animal + "AL");$(13_10)enemAH = variable_instance_get(obj_battle_interface, animal + "AH");$(13_10)enemMax = variable_instance_get(obj_battle_interface, animal + "HealthM");$(13_10)enemAlive = variable_instance_get(global, animal + "Alive");$(13_10)$(13_10)$(13_10)$(13_10)//calculate which animal's pelt to recieve$(13_10)enemReward = animal;$(13_10)$(13_10)//this naming convention is 100% NECESSARY$(13_10)$(13_10)if enemReward == "boar"{$(13_10)	enemReward = "bornean_bearded_pig";	$(13_10)}$(13_10)$(13_10)if enemReward == "wolf"{$(13_10)	enemReward = "ethiopian_wolf";	$(13_10)}$(13_10)$(13_10)if enemReward == "sheep"{$(13_10)	enemReward = "guinea_sheep";	$(13_10)}$(13_10)$(13_10)if enemReward == "dog"{$(13_10)	enemReward = "african_wild_dog";	$(13_10)}$(13_10)$(13_10)if enemReward == "gaz"{$(13_10)	enemReward = "gazelle";	$(13_10)}$(13_10)$(13_10)if enemReward == "scorpion"{$(13_10)	enemReward = "deathstalker_scorpion";	$(13_10)}$(13_10)$(13_10)if enemReward == "rfox"{$(13_10)	enemReward = "desert_fox";	$(13_10)}$(13_10)$(13_10)if enemReward == "pecc"{$(13_10)	enemReward = "peccary";	$(13_10)}$(13_10)$(13_10)if enemReward == "jack"{$(13_10)	enemReward = "jackrabbit";	$(13_10)}$(13_10)$(13_10)if enemReward == "gator"{$(13_10)	enemReward = "american_alligator";	$(13_10)}$(13_10)$(13_10)if enemReward == "turtle"{$(13_10)	enemReward = "snapping_turtle";	$(13_10)}$(13_10)$(13_10)if enemReward == "fish"{$(13_10)	enemReward = "swamp_fish";	$(13_10)}$(13_10)$(13_10)if enemReward == "jag"{$(13_10)	enemReward = "jaguar";	$(13_10)}$(13_10)$(13_10)if enemReward == "snake"{$(13_10)	enemReward = "anaconda";	$(13_10)}$(13_10)$(13_10)if enemReward == "capy"{$(13_10)	enemReward = "capybara";	$(13_10)}$(13_10)$(13_10)if enemReward == "bear"{$(13_10)	enemReward = "polar_bear";	$(13_10)}$(13_10)$(13_10)if enemReward == "arcwolf"{$(13_10)	enemReward = "arctic_wolf";	$(13_10)}$(13_10)$(13_10)if enemReward == "seal"{$(13_10)	enemReward = "harp_seal";	$(13_10)}$(13_10)$(13_10)if enemReward == "boar1"{$(13_10)	enemReward = "bornean_bearded_pig";	$(13_10)}"
 //Idea provided by AI
 
 // Get the current room's name
@@ -355,6 +367,8 @@ enemAH = variable_instance_get(obj_battle_interface, animal + "AH");
 enemMax = variable_instance_get(obj_battle_interface, animal + "HealthM");
 enemAlive = variable_instance_get(global, animal + "Alive");
 
+
+
 //calculate which animal's pelt to recieve
 enemReward = animal;
 
@@ -365,7 +379,7 @@ if enemReward == "boar"{
 }
 
 if enemReward == "wolf"{
-	enemReward = "ethiopian_wolves";	
+	enemReward = "ethiopian_wolf";	
 }
 
 if enemReward == "sheep"{
@@ -430,6 +444,10 @@ if enemReward == "arcwolf"{
 
 if enemReward == "seal"{
 	enemReward = "harp_seal";	
+}
+
+if enemReward == "boar1"{
+	enemReward = "bornean_bearded_pig";	
 }
 
 /// @DnDAction : YoYo Games.Common.Execute_Code

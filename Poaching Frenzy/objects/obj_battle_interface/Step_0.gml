@@ -49,7 +49,7 @@ enemDamage_drawY = path_get_y(p_enem, enemDamage_pathProgress);
 /// @DnDVersion : 1
 /// @DnDHash : 182C4BC2
 /// @DnDComment : using consumables block
-/// @DnDArgument : "code" "if (showInv) {$(13_10)    // Count consumables$(13_10)    var count_consumables = 0;$(13_10)    for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)        var _item = ds_list_find_value(obj_inventory.inventory, i);$(13_10)        if (array_contains(consumables, _item.name) != -1) {$(13_10)            count_consumables++;$(13_10)        }$(13_10)    }$(13_10)    $(13_10)    var total_options = count_consumables + 1;  // +1 for Back button$(13_10)    $(13_10)    //defining keys$(13_10)    var key_left = keyboard_check_pressed(ord("A")) or keyboard_check_pressed(vk_left);$(13_10)    var key_right = keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_right);$(13_10)    var key_confirm = keyboard_check_pressed(vk_space);$(13_10)$(13_10)    //menu navigation$(13_10)    if (key_right) {$(13_10)        selected_index = (selected_index + 1) mod total_options;$(13_10)    }$(13_10)    else if (key_left) {$(13_10)        selected_index = (selected_index - 1 + total_options) mod total_options;$(13_10)    }$(13_10)    $(13_10)    // Handle confirmation$(13_10)    if (key_confirm) {$(13_10)        if (selected_index < count_consumables) {$(13_10)            // Find and use selected consumable$(13_10)            var current_idx = 0;$(13_10)            for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)                var _item = ds_list_find_value(obj_inventory.inventory, i);$(13_10)                if (array_contains(consumables, _item.name) != 0) {$(13_10)                    if (current_idx == selected_index) {$(13_10)                        // uses an item$(13_10)                        script_execute(removeitem, _item.name, 1);$(13_10)$(13_10)						// modify health accordingly$(13_10)						if _item.name == "Energy Drink"{$(13_10)						$(13_10)							global.chudHealth += 25;$(13_10)						$(13_10)						}$(13_10)						$(13_10)						if _item.name == "Animal Meat"{$(13_10)							$(13_10)							global.chudHealth += 10;$(13_10)							$(13_10)						}$(13_10)						$(13_10)                        // Reset selection after use$(13_10)                        selected_index = 0;$(13_10)                        break;$(13_10)                    }$(13_10)                    current_idx++;$(13_10)                }$(13_10)				$(13_10)				else{$(13_10)				$(13_10)			        audio_play_sound(snd_denied_action, 0, 0, 1.0, undefined, 1.0);$(13_10)				$(13_10)				}$(13_10)            }$(13_10)        } else {$(13_10)            // Back button logic$(13_10)            alarm_set(1, 1);$(13_10)        }$(13_10)    }$(13_10)    $(13_10)    // Keep selection in bounds$(13_10)    selected_index = clamp(selected_index, 0, total_options - 1);$(13_10)}"
+/// @DnDArgument : "code" "if (showInv) {$(13_10)    // Count consumables$(13_10)    var count_consumables = 0;$(13_10)    for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)        var _item = ds_list_find_value(obj_inventory.inventory, i);$(13_10)        if (array_contains(consumables, _item.name) != -1) {$(13_10)            count_consumables++;$(13_10)        }$(13_10)    }$(13_10)$(13_10)    var total_options = count_consumables + 1;  // +1 for Back button at index 0$(13_10)$(13_10)    // Define keys$(13_10)    var key_left = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);$(13_10)    var key_right = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);$(13_10)    var key_confirm = keyboard_check_pressed(vk_space);$(13_10)$(13_10)    // Menu navigation$(13_10)    if (key_right) {$(13_10)        selected_index = (selected_index + 1) mod total_options;$(13_10)    }$(13_10)    else if (key_left) {$(13_10)        selected_index = (selected_index - 1 + total_options) mod total_options;$(13_10)    }$(13_10)$(13_10)    // Handle confirmation$(13_10)    if (key_confirm) {$(13_10)        if (selected_index == 0) {$(13_10)            // Back button logic$(13_10)            alarm_set(1, 1);$(13_10)        } else {$(13_10)            // Use selected consumable$(13_10)            var current_idx = 1; // Start from index 1 since 0 is Back$(13_10)            for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {$(13_10)                var _item = ds_list_find_value(obj_inventory.inventory, i);$(13_10)                if (array_contains(consumables, _item.name) != 0) {$(13_10)                    if (current_idx == selected_index) {$(13_10)                        // Use the item$(13_10)                        script_execute(removeitem, _item.name, 1);$(13_10)$(13_10)                        // Modify health accordingly$(13_10)                        if (_item.name == "Energy Drink") {$(13_10)							global.chudHealth += 25;$(13_10)							$(13_10)							if global.chudHealth > global.max_health {$(13_10)								global.chudHealth = global.max_health	$(13_10)							}$(13_10)							$(13_10)                        }$(13_10)                        if (_item.name == "Animal Meat") {$(13_10)                            global.chudHealth += 10;$(13_10)                        }$(13_10)$(13_10)                        selected_index = 0; // Reset to Back$(13_10)                        break;$(13_10)                    }$(13_10)                    current_idx++;$(13_10)                }$(13_10)            }$(13_10)        }$(13_10)    }$(13_10)$(13_10)    // Keep selection in bounds$(13_10)    selected_index = clamp(selected_index, 0, total_options - 1);$(13_10)}$(13_10)"
 if (showInv) {
     // Count consumables
     var count_consumables = 0;
@@ -59,66 +59,59 @@ if (showInv) {
             count_consumables++;
         }
     }
-    
-    var total_options = count_consumables + 1;  // +1 for Back button
-    
-    //defining keys
-    var key_left = keyboard_check_pressed(ord("A")) or keyboard_check_pressed(vk_left);
-    var key_right = keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_right);
+
+    var total_options = count_consumables + 1;  // +1 for Back button at index 0
+
+    // Define keys
+    var key_left = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
+    var key_right = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);
     var key_confirm = keyboard_check_pressed(vk_space);
 
-    //menu navigation
+    // Menu navigation
     if (key_right) {
         selected_index = (selected_index + 1) mod total_options;
     }
     else if (key_left) {
         selected_index = (selected_index - 1 + total_options) mod total_options;
     }
-    
+
     // Handle confirmation
     if (key_confirm) {
-        if (selected_index < count_consumables) {
-            // Find and use selected consumable
-            var current_idx = 0;
+        if (selected_index == 0) {
+            // Back button logic
+            alarm_set(1, 1);
+        } else {
+            // Use selected consumable
+            var current_idx = 1; // Start from index 1 since 0 is Back
             for (var i = 0; i < ds_list_size(obj_inventory.inventory); i++) {
                 var _item = ds_list_find_value(obj_inventory.inventory, i);
                 if (array_contains(consumables, _item.name) != 0) {
                     if (current_idx == selected_index) {
-                        // uses an item
+                        // Use the item
                         script_execute(removeitem, _item.name, 1);
 
-						// modify health accordingly
-						if _item.name == "Energy Drink"{
-						
+                        // Modify health accordingly
+                        if (_item.name == "Energy Drink") {
 							global.chudHealth += 25;
-						
-						}
-						
-						if _item.name == "Animal Meat"{
 							
-							global.chudHealth += 10;
+							if global.chudHealth > global.max_health {
+								global.chudHealth = global.max_health	
+							}
 							
-						}
-						
-                        // Reset selection after use
-                        selected_index = 0;
+                        }
+                        if (_item.name == "Animal Meat") {
+                            global.chudHealth += 10;
+                        }
+
+                        selected_index = 0; // Reset to Back
                         break;
                     }
                     current_idx++;
                 }
-				
-				else{
-				
-			        audio_play_sound(snd_denied_action, 0, 0, 1.0, undefined, 1.0);
-				
-				}
             }
-        } else {
-            // Back button logic
-            alarm_set(1, 1);
         }
     }
-    
+
     // Keep selection in bounds
     selected_index = clamp(selected_index, 0, total_options - 1);
 }
@@ -157,13 +150,14 @@ if(enemHealth <= 0){	/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDSaveInfo : "script" "additem"
 		script_execute(additem, enemReward + "Bad",1);}
 
-	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
-	/// @DnDHash : 19BC3CBD
+	/// @DnDHash : 756F20AA
 	/// @DnDParent : 3E417256
-	/// @DnDArgument : "expr" "false"
-	/// @DnDArgument : "var" "enemAlive"
-	enemAlive = false;
+	/// @DnDArgument : "code" "/// @description properly modify global variable$(13_10)$(13_10)variable_instance_set(global, animal + "Alive", false);"
+	/// @description properly modify global variable
+	
+	variable_instance_set(global, animal + "Alive", false);
 
 	/// @DnDAction : YoYo Games.Random.Randomize
 	/// @DnDVersion : 1

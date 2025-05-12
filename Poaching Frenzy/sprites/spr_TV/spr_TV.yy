@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_TV",
   "bboxMode":0,
-  "bbox_bottom":77,
+  "bbox_bottom":255,
   "bbox_left":0,
-  "bbox_right":56,
+  "bbox_right":255,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":78,
+  "height":256,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"645ac132-0ed8-4120-ab15-7ce8b83c770d","blendMode":0,"displayName":"default","isLocked":false,"name":"645ac132-0ed8-4120-ab15-7ce8b83c770d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -84,5 +84,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":57,
+  "width":256,
 }
