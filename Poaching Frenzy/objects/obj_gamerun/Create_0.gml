@@ -2,7 +2,7 @@
 /// @DnDVersion : 1
 /// @DnDHash : 514C9A31
 /// @DnDComment : Object only runs once.$(13_10)Perfect for creating "progess markers"$(13_10)and Chud's starting HP
-/// @DnDInput : 6
+/// @DnDInput : 18
 /// @DnDArgument : "value_4" "100"
 /// @DnDArgument : "var" "tutorial"
 /// @DnDArgument : "var_1" "meetChudette"
@@ -10,12 +10,36 @@
 /// @DnDArgument : "var_3" "hasFought"
 /// @DnDArgument : "var_4" "chudHealth"
 /// @DnDArgument : "var_5" "noRide"
+/// @DnDArgument : "var_6" "zone2Discover"
+/// @DnDArgument : "var_7" "zone3Discover"
+/// @DnDArgument : "var_8" "zone4Discover"
+/// @DnDArgument : "var_9" "zone5Discover"
+/// @DnDArgument : "var_10" "zone6Discover"
+/// @DnDArgument : "var_11" "hasDiscovered2"
+/// @DnDArgument : "var_12" "hasDiscovered3"
+/// @DnDArgument : "var_13" "hasDiscovered4"
+/// @DnDArgument : "var_14" "hasDiscovered5"
+/// @DnDArgument : "var_15" "hasDiscovered6"
+/// @DnDArgument : "var_16" "hijackBus"
+/// @DnDArgument : "var_17" "hasHijacked"
 global.tutorial = 0;
 global.meetChudette = 0;
 global.boarCreated = 0;
 global.hasFought = 0;
 global.chudHealth = 100;
 global.noRide = 0;
+global.zone2Discover = 0;
+global.zone3Discover = 0;
+global.zone4Discover = 0;
+global.zone5Discover = 0;
+global.zone6Discover = 0;
+global.hasDiscovered2 = 0;
+global.hasDiscovered3 = 0;
+global.hasDiscovered4 = 0;
+global.hasDiscovered5 = 0;
+global.hasDiscovered6 = 0;
+global.hijackBus = 0;
+global.hasHijacked = 0;
 
 /// @DnDAction : YoYo Games.Common.Execute_Script
 /// @DnDVersion : 1.1

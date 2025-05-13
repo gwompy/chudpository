@@ -39,6 +39,32 @@ if(room == r_zone1){	/// @DnDAction : YoYo Games.Common.If_Variable
 					global.stage = 2;
 					hasRan = 1;
 				
+					/// @DnDAction : YoYo Games.Common.If_Variable
+					/// @DnDVersion : 1
+					/// @DnDHash : 053B478E
+					/// @DnDParent : 116A48DF
+					/// @DnDArgument : "var" "global.hasHijacked"
+					if(global.hasHijacked == 0){	/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 64F5C875
+						/// @DnDParent : 053B478E
+						/// @DnDArgument : "expr" "1"
+						/// @DnDArgument : "var" "global.hijackBus"
+						global.hijackBus = 1;}
+				
+					/// @DnDAction : YoYo Games.Common.If_Variable
+					/// @DnDVersion : 1
+					/// @DnDHash : 1A8D20B1
+					/// @DnDParent : 116A48DF
+					/// @DnDArgument : "var" "global.hasDiscovered2"
+					if(global.hasDiscovered2 == 0){	/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 3D81BEE4
+						/// @DnDParent : 1A8D20B1
+						/// @DnDArgument : "expr" "1"
+						/// @DnDArgument : "var" "global.zone2Discover"
+						global.zone2Discover = 1;}
+				
 					/// @DnDAction : YoYo Games.Common.Execute_Script
 					/// @DnDVersion : 1.1
 					/// @DnDHash : 13FB6146
@@ -103,6 +129,19 @@ if(room == r_zone2){	/// @DnDAction : YoYo Games.Common.If_Variable
 					/// @DnDArgument : "var_1" "hasRan"
 					global.stage = 3;
 					hasRan = 1;
+				
+					/// @DnDAction : YoYo Games.Common.If_Variable
+					/// @DnDVersion : 1
+					/// @DnDHash : 2765A7A8
+					/// @DnDParent : 69B2E60F
+					/// @DnDArgument : "var" "global.hasDiscovered3"
+					if(global.hasDiscovered3 == 0){	/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 7ADF5140
+						/// @DnDParent : 2765A7A8
+						/// @DnDArgument : "expr" "1"
+						/// @DnDArgument : "var" "global.zone3Discover"
+						global.zone3Discover = 1;}
 				
 					/// @DnDAction : YoYo Games.Common.Execute_Script
 					/// @DnDVersion : 1.1
@@ -169,6 +208,19 @@ if(room == r_zone3){	/// @DnDAction : YoYo Games.Common.If_Variable
 					global.stage = 4;
 					hasRan = 1;
 				
+					/// @DnDAction : YoYo Games.Common.If_Variable
+					/// @DnDVersion : 1
+					/// @DnDHash : 4249D91B
+					/// @DnDParent : 1A616355
+					/// @DnDArgument : "var" "global.hasDiscovered4"
+					if(global.hasDiscovered4 == 0){	/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 0982D86E
+						/// @DnDParent : 4249D91B
+						/// @DnDArgument : "expr" "1"
+						/// @DnDArgument : "var" "global.zone4Discover"
+						global.zone4Discover = 1;}
+				
 					/// @DnDAction : YoYo Games.Common.Execute_Script
 					/// @DnDVersion : 1.1
 					/// @DnDHash : 0517CD3B
@@ -234,6 +286,19 @@ if(room == r_zone4){	/// @DnDAction : YoYo Games.Common.If_Variable
 					global.stage = 5;
 					hasRan = 1;
 				
+					/// @DnDAction : YoYo Games.Common.If_Variable
+					/// @DnDVersion : 1
+					/// @DnDHash : 08C2D9A9
+					/// @DnDParent : 64090C5C
+					/// @DnDArgument : "var" "global.hasDiscovered5"
+					if(global.hasDiscovered5 == 0){	/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 39DE2239
+						/// @DnDParent : 08C2D9A9
+						/// @DnDArgument : "expr" "1"
+						/// @DnDArgument : "var" "global.zone5Discover"
+						global.zone5Discover = 1;}
+				
 					/// @DnDAction : YoYo Games.Common.Execute_Script
 					/// @DnDVersion : 1.1
 					/// @DnDHash : 3CEE2684
@@ -298,6 +363,19 @@ if(room == r_zone5){	/// @DnDAction : YoYo Games.Common.If_Variable
 					/// @DnDArgument : "var_1" "hasRan"
 					global.stage = 6;
 					hasRan = 1;
+				
+					/// @DnDAction : YoYo Games.Common.If_Variable
+					/// @DnDVersion : 1
+					/// @DnDHash : 38561155
+					/// @DnDParent : 11EA0617
+					/// @DnDArgument : "var" "global.hasDiscovered6"
+					if(global.hasDiscovered6 == 0){	/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 4E2AA344
+						/// @DnDParent : 38561155
+						/// @DnDArgument : "expr" "1"
+						/// @DnDArgument : "var" "global.zone6Discover"
+						global.zone6Discover = 1;}
 				
 					/// @DnDAction : YoYo Games.Rooms.Next_Room
 					/// @DnDVersion : 1
